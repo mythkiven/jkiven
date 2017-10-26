@@ -1,0 +1,29 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '8.0'
+
+target 'BackgroundCheck' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDAutoLayout', '~> 2.1.8'
+pod 'SDWebImage', '~> 3.8.1'
+pod 'FMDB', '~> 2.6.2'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'MJExtension', '~> 3.0.13'
+pod 'MBProgressHUD+BWMExtension', '~> 1.0.1'
+pod 'RTRootNavigationController', '~> 0.5.15'
+
+
+  # Pods for BackgroundCheck
+
+  target 'BackgroundCheckTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'BackgroundCheckUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

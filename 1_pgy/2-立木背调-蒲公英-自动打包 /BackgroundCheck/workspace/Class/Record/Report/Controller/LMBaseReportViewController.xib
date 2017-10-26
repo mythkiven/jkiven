@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LMBaseReportViewController">
+            <connections>
+                <outlet property="tableview" destination="XJY-2f-6de" id="bpr-Pq-8Ce"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="475" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XJY-2f-6de">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="MaM-k6-SJB"/>
+                        <outlet property="delegate" destination="-1" id="hzo-UM-kyq"/>
+                    </connections>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wqe-pG-0Xd">
+                    <rect key="frame" x="315" y="522" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="45" id="53U-8u-zGb"/>
+                        <constraint firstAttribute="width" constant="45" id="yFp-RV-Qxl"/>
+                    </constraints>
+                    <state key="normal" image="icon_backtop"/>
+                    <state key="highlighted" image="icon_backtop"/>
+                    <connections>
+                        <action selector="scrollTop:" destination="-1" eventType="touchUpInside" id="aXh-Nt-SfN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.94117647058823528" green="0.94901960784313721" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Wqe-pG-0Xd" secondAttribute="bottom" constant="100" id="7JE-km-kNU"/>
+                <constraint firstAttribute="bottom" secondItem="XJY-2f-6de" secondAttribute="bottom" id="K9k-rJ-TyF"/>
+                <constraint firstAttribute="trailing" secondItem="Wqe-pG-0Xd" secondAttribute="trailing" constant="15" id="Y4N-aH-ghO"/>
+                <constraint firstItem="XJY-2f-6de" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="bgG-Ea-fbv"/>
+                <constraint firstAttribute="trailing" secondItem="XJY-2f-6de" secondAttribute="trailing" id="kHi-Ku-0Uf"/>
+                <constraint firstItem="XJY-2f-6de" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oaK-th-Pd1"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_backtop" width="45" height="45"/>
+    </resources>
+</document>

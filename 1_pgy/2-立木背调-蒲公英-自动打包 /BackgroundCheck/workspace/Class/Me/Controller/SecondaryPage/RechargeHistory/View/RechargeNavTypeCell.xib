@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="47" id="KGk-i7-Jjw" customClass="RechargeNavTypeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="375" height="39"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guv-kL-AkT">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="tgv-SZ-DgV"/>
+                        </constraints>
+                        <state key="normal" image="selected"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n97-cK-Cec">
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="全部">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="selectBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="4eq-hX-2VH"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kFQ-zi-Jsb">
+                        <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="cuX-CU-P3o"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="kFQ-zi-Jsb" firstAttribute="top" secondItem="guv-kL-AkT" secondAttribute="bottom" id="2KF-9X-MRS"/>
+                    <constraint firstItem="n97-cK-Cec" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="2vv-0k-fhr"/>
+                    <constraint firstItem="kFQ-zi-Jsb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="45" id="95B-Yg-Cys"/>
+                    <constraint firstItem="n97-cK-Cec" firstAttribute="leading" secondItem="guv-kL-AkT" secondAttribute="trailing" constant="5" id="KRV-IO-H9Y"/>
+                    <constraint firstItem="guv-kL-AkT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="UPl-i1-zLf"/>
+                    <constraint firstAttribute="trailing" secondItem="n97-cK-Cec" secondAttribute="trailing" id="eOT-NT-gKz"/>
+                    <constraint firstAttribute="bottom" secondItem="kFQ-zi-Jsb" secondAttribute="bottom" id="hSN-5j-u9u"/>
+                    <constraint firstItem="guv-kL-AkT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kW9-Sy-d45"/>
+                    <constraint firstItem="kFQ-zi-Jsb" firstAttribute="top" secondItem="n97-cK-Cec" secondAttribute="bottom" id="qJs-Kb-FNc"/>
+                    <constraint firstAttribute="trailing" secondItem="kFQ-zi-Jsb" secondAttribute="trailing" id="sA2-NX-tUA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="leftBtn" destination="n97-cK-Cec" id="8Xz-dA-dxF"/>
+                <outlet property="leftIcon" destination="guv-kL-AkT" id="Z0t-ck-Dpe"/>
+            </connections>
+            <point key="canvasLocation" x="-114" y="-7"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selected" width="15" height="11"/>
+    </resources>
+</document>

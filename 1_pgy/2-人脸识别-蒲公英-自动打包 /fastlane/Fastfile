@@ -1,0 +1,90 @@
+ 
+fastlane_version "2.14.2"
+
+default_platform :ios
+
+
+platform :ios do
+
+  #before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+    # cocoapods(repo_update: false)
+    
+  #end
+  
+ 
+#蒲公英
+lane :beta do
+  gym(export_method: "development")
+  #gym(export_method: "ad-hoc")
+  #gym(use_legacy_build_api: true)
+  pgyer(api_key: "512292feaae56ec75625f85227f55d9b", user_key: "d4a73da0e5a0386a5737ee70f5cbd094")
+end
+
+
+
+  # 创建证书
+ # desc "Creating a code signing certificate and provisioning profile"
+  #lane :provision do
+   # produce(
+   #   app_name: '立木征信SDK',
+   #   language: 'zh-Hans',
+  #    app_version: '1.0.0',
+  #    sku: 'com.limubeidiao.backgroundcheck'
+  #  )
+  #  cert
+  #  sigh(force: true)
+ # end
+
+
+  # 创建 IPA
+  #desc "Create ipa"
+   # lane :build do
+   #   increment_build_number
+   #   gym
+   # end
+
+  # 发布 appstore
+ # desc "Upload to App Store and submit for review"
+  #  lane :upload do
+   #   deliver(
+    #    submit_for_review: true
+   #   )
+  #  end
+
+  # 全过程
+  #desc "Provision, take screenshots, build and upload to App Store"
+  #  lane :do_everything do
+    #  provision
+   #   #screenshot
+   #   build
+   #   upload
+  #  end
+
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer

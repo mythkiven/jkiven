@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LMHomeCell" customModule="LMZX_SDKDemo_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lm_home_auto" translatesAutoresizingMaskIntoConstraints="NO" id="08u-XZ-JIK">
+                        <rect key="frame" x="15" y="21" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="23" id="Euw-nD-V4e"/>
+                            <constraint firstAttribute="height" constant="23" id="uKF-9b-TfQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="汽车保险" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r3u-VF-2Sv">
+                        <rect key="frame" x="54" y="0.0" width="376" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bl4-HS-MC2">
+                        <rect key="frame" x="444.5" y="0.0" width="0.5" height="64.5"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="CDm-gm-yVa"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJb-Jy-lri">
+                        <rect key="frame" x="0.0" y="64.5" width="445" height="0.5"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="EZR-3J-MaU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="08u-XZ-JIK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="068-Uf-cVF"/>
+                <constraint firstItem="r3u-VF-2Sv" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="56N-Pk-ioa"/>
+                <constraint firstItem="08u-XZ-JIK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="5zM-i7-nqm"/>
+                <constraint firstItem="bl4-HS-MC2" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Dye-Ce-HAv"/>
+                <constraint firstAttribute="trailing" secondItem="bl4-HS-MC2" secondAttribute="trailing" id="KOC-ES-UGG"/>
+                <constraint firstItem="r3u-VF-2Sv" firstAttribute="leading" secondItem="08u-XZ-JIK" secondAttribute="trailing" constant="16" id="RF4-6a-TIb"/>
+                <constraint firstAttribute="trailing" secondItem="r3u-VF-2Sv" secondAttribute="trailing" constant="15" id="SHm-xS-eud"/>
+                <constraint firstItem="NJb-Jy-lri" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="ZEm-nX-JIj"/>
+                <constraint firstAttribute="bottom" secondItem="r3u-VF-2Sv" secondAttribute="bottom" id="aOo-ZR-FuR"/>
+                <constraint firstAttribute="trailing" secondItem="NJb-Jy-lri" secondAttribute="trailing" id="dC3-OE-y1c"/>
+                <constraint firstItem="NJb-Jy-lri" firstAttribute="top" secondItem="bl4-HS-MC2" secondAttribute="bottom" id="g6a-07-ksU"/>
+                <constraint firstAttribute="bottom" secondItem="NJb-Jy-lri" secondAttribute="bottom" id="i4H-h9-SZ8"/>
+            </constraints>
+            <size key="customSize" width="445" height="54"/>
+            <connections>
+                <outlet property="iconView" destination="08u-XZ-JIK" id="Qd1-03-VpY"/>
+                <outlet property="titleLb" destination="r3u-VF-2Sv" id="nOg-86-0Qp"/>
+            </connections>
+            <point key="canvasLocation" x="-4.5" y="-8.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lm_home_auto" width="23" height="23"/>
+    </resources>
+</document>

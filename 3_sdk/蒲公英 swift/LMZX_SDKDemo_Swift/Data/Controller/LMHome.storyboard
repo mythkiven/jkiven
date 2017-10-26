@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="fmc-xG-00X">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--数据-->
+        <scene sceneID="llj-MY-Eh5">
+            <objects>
+                <viewController id="fmc-xG-00X" customClass="LMHomeVC" customModule="LMZX_SDKDemo_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KfP-gm-z2H"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Cu-BI-5Zj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4fQ-vw-yYu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lm_home_topbar" translatesAutoresizingMaskIntoConstraints="NO" id="9Lq-0P-biS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="114"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="114" id="mkn-W9-5tW"/>
+                                </constraints>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kq4-Tp-JFC">
+                                <rect key="frame" x="0.0" y="114" width="375" height="504"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="SM3-jP-2l2">
+                                    <size key="itemSize" width="100" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="78r-34-Zdh">
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="fmc-xG-00X" id="wlN-Lj-wYw"/>
+                                    <outlet property="delegate" destination="fmc-xG-00X" id="MPi-VL-WHs"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="9Lq-0P-biS" firstAttribute="top" secondItem="4fQ-vw-yYu" secondAttribute="top" id="74N-4j-HTN"/>
+                            <constraint firstItem="9Lq-0P-biS" firstAttribute="leading" secondItem="4fQ-vw-yYu" secondAttribute="leading" id="SZD-SP-Rrn"/>
+                            <constraint firstAttribute="trailing" secondItem="9Lq-0P-biS" secondAttribute="trailing" id="VXb-VE-u1p"/>
+                            <constraint firstItem="kq4-Tp-JFC" firstAttribute="top" secondItem="9Lq-0P-biS" secondAttribute="bottom" id="hvU-Q4-xSz"/>
+                            <constraint firstItem="kq4-Tp-JFC" firstAttribute="leading" secondItem="4fQ-vw-yYu" secondAttribute="leading" id="kN3-QJ-yb7"/>
+                            <constraint firstAttribute="trailing" secondItem="kq4-Tp-JFC" secondAttribute="trailing" id="uAN-m6-LmY"/>
+                            <constraint firstItem="2Cu-BI-5Zj" firstAttribute="top" secondItem="kq4-Tp-JFC" secondAttribute="bottom" id="yuW-EU-LpM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="数据" image="tabbar_data_nor" selectedImage="tabbar_data_sel" id="Vvh-e3-1H7"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="collectionView" destination="kq4-Tp-JFC" id="Bj8-PC-cFC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bJZ-Cn-5kH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-44" y="-162"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="lm_home_topbar" width="375" height="114"/>
+        <image name="tabbar_data_nor" width="23" height="24"/>
+        <image name="tabbar_data_sel" width="23" height="24"/>
+    </resources>
+</document>

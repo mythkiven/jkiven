@@ -1,0 +1,1186 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D2591BF91E97201F00032EE0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BCA1E97201F00032EE0 /* AppDelegate.m */; };
+		D2591BFA1E97201F00032EE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2591BCB1E97201F00032EE0 /* Assets.xcassets */; };
+		D2591BFB1E97201F00032EE0 /* hehhe~.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2591BCC1E97201F00032EE0 /* hehhe~.storyboard */; };
+		D2591BFC1E97201F00032EE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2591BCE1E97201F00032EE0 /* LaunchScreen.storyboard */; };
+		D2591BFD1E97201F00032EE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2591BD01E97201F00032EE0 /* Main.storyboard */; };
+		D2591BFE1E97201F00032EE0 /* LMHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BD51E97201F00032EE0 /* LMHomeViewController.m */; };
+		D2591BFF1E97201F00032EE0 /* LMResultShowVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BD71E97201F00032EE0 /* LMResultShowVC.m */; };
+		D2591C001E97201F00032EE0 /* LMZXColorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BD91E97201F00032EE0 /* LMZXColorViewController.m */; };
+		D2591C011E97201F00032EE0 /* LMHomeTypeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BDC1E97201F00032EE0 /* LMHomeTypeModel.m */; };
+		D2591C021E97201F00032EE0 /* LMCollectionReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BDF1E97201F00032EE0 /* LMCollectionReusableView.m */; };
+		D2591C031E97201F00032EE0 /* LMCollectionReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2591BE01E97201F00032EE0 /* LMCollectionReusableView.xib */; };
+		D2591C041E97201F00032EE0 /* LMHomeCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BE21E97201F00032EE0 /* LMHomeCollectionViewCell.m */; };
+		D2591C051E97201F00032EE0 /* LMHomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2591BE31E97201F00032EE0 /* LMHomeCollectionViewCell.xib */; };
+		D2591C061E97201F00032EE0 /* homeType.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2591BE41E97201F00032EE0 /* homeType.plist */; };
+		D2591C071E97201F00032EE0 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2591BE51E97201F00032EE0 /* Info.plist */; };
+		D2591C081E97201F00032EE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BE61E97201F00032EE0 /* main.m */; };
+		D2591C091E97201F00032EE0 /* LMCustomThemeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BEB1E97201F00032EE0 /* LMCustomThemeVC.m */; };
+		D2591C0A1E97201F00032EE0 /* LMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BED1E97201F00032EE0 /* LMNavigationController.m */; };
+		D2591C0B1E97201F00032EE0 /* LMZXAlphaView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BF01E97201F00032EE0 /* LMZXAlphaView.m */; };
+		D2591C0C1E97201F00032EE0 /* LMZXColorImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BF21E97201F00032EE0 /* LMZXColorImageView.m */; };
+		D2591C0D1E97201F00032EE0 /* LMZXSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BF41E97201F00032EE0 /* LMZXSettingCell.m */; };
+		D2591C0E1E97201F00032EE0 /* LMZXSettingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2591BF51E97201F00032EE0 /* LMZXSettingCell.xib */; };
+		D2591C0F1E97201F00032EE0 /* palette.png in Resources */ = {isa = PBXBuildFile; fileRef = D2591BF61E97201F00032EE0 /* palette.png */; };
+		D2591C101E97201F00032EE0 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2591BF81E97201F00032EE0 /* UIColor+Extension.m */; };
+		D2E64F7A1E965CF50077D568 /* LMZXBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EBB1E965CF50077D568 /* LMZXBaseViewController.m */; };
+		D2E64F7B1E965CF50077D568 /* LMZXSDKNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EBD1E965CF50077D568 /* LMZXSDKNavigationController.m */; };
+		D2E64F7C1E965CF50077D568 /* LMZXToast+UIView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EC01E965CF50077D568 /* LMZXToast+UIView.m */; };
+		D2E64F7D1E965CF50077D568 /* NSString+LMZXCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EC21E965CF50077D568 /* NSString+LMZXCommon.m */; };
+		D2E64F7E1E965CF50077D568 /* UIBarButtonItem+LMZXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EC41E965CF50077D568 /* UIBarButtonItem+LMZXExtension.m */; };
+		D2E64F7F1E965CF50077D568 /* UIButton+LMZXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EC61E965CF50077D568 /* UIButton+LMZXExtension.m */; };
+		D2E64F801E965CF50077D568 /* UIImage+LMZXTint.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EC81E965CF50077D568 /* UIImage+LMZXTint.m */; };
+		D2E64F811E965CF50077D568 /* UIImageView+LMZXExtend.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64ECA1E965CF50077D568 /* UIImageView+LMZXExtend.m */; };
+		D2E64F821E965CF50077D568 /* UILabel+LMZXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64ECC1E965CF50077D568 /* UILabel+LMZXExtension.m */; };
+		D2E64F831E965CF50077D568 /* UIView+LMZXExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64ECE1E965CF50077D568 /* UIView+LMZXExtension.m */; };
+		D2E64F841E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64ED01E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.m */; };
+		D2E64F8D1E965CF50077D568 /* LMZXFactoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EE51E965CF50077D568 /* LMZXFactoryView.m */; };
+		D2E64F8E1E965CF50077D568 /* LMZXLog.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EE71E965CF50077D568 /* LMZXLog.m */; };
+		D2E64F8F1E965CF50077D568 /* LMZXSMSTextFiled.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EE91E965CF50077D568 /* LMZXSMSTextFiled.m */; };
+		D2E64F901E965CF50077D568 /* LMZXTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EEB1E965CF50077D568 /* LMZXTool.m */; };
+		D2E64F921E965CF50077D568 /* LMZXSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64EF11E965CF50077D568 /* LMZXSDK.m */; };
+		D2E64F9D1E965CF50077D568 /* LMZXPopTextFiledView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F0C1E965CF50077D568 /* LMZXPopTextFiledView.m */; };
+		D2E64F9E1E965CF50077D568 /* LMZXCityListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F0F1E965CF50077D568 /* LMZXCityListCell.m */; };
+		D2E64F9F1E965CF50077D568 /* LMZXCityListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F111E965CF50077D568 /* LMZXCityListViewController.m */; };
+		D2E64FA01E965CF50077D568 /* LMZXCityLocationView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F131E965CF50077D568 /* LMZXCityLocationView.m */; };
+		D2E64FA11E965CF50077D568 /* LMZXCityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F151E965CF50077D568 /* LMZXCityModel.m */; };
+		D2E64FA21E965CF50077D568 /* LMZXCitySearchResultVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F171E965CF50077D568 /* LMZXCitySearchResultVC.m */; };
+		D2E64FA31E965CF50077D568 /* LMZXSearchBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F1A1E965CF50077D568 /* LMZXSearchBaseVC.m */; };
+		D2E64FA41E965CF50077D568 /* LMZXLoadingAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F1E1E965CF50077D568 /* LMZXLoadingAnimation.m */; };
+		D2E64FA51E965CF50077D568 /* LMZXLoadingManagerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F201E965CF50077D568 /* LMZXLoadingManagerView.m */; };
+		D2E64FA61E965CF50077D568 /* LMZXLoadingReportBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F221E965CF50077D568 /* LMZXLoadingReportBaseVC.m */; };
+		D2E64FB11E965CF50077D568 /* LMZXTBProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F3D1E965CF50077D568 /* LMZXTBProtocol.m */; };
+		D2E64FB21E965CF50077D568 /* LMZXWebNetWork.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F3F1E965CF50077D568 /* LMZXWebNetWork.m */; };
+		D2E64FB31E965CF50077D568 /* LMZXWebViewBaseVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F411E965CF50077D568 /* LMZXWebViewBaseVC.m */; };
+		D2E64FB81E965CF50077D568 /* LMZXAnalysisWebModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F4C1E965CF50077D568 /* LMZXAnalysisWebModel.m */; };
+		D2E64FB91E965CF50077D568 /* LMZXReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F4E1E965CF50077D568 /* LMZXReachability.m */; };
+		D2E64FBA1E965CF50077D568 /* LMZXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F501E965CF50077D568 /* LMZXWebViewController.m */; };
+		D2E64FBB1E965CF50077D568 /* LMZXWebBusinessVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F531E965CF50077D568 /* LMZXWebBusinessVC.m */; };
+		D2E64FC41E965CF50077D568 /* LMZXHTTPTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F6C1E965CF50077D568 /* LMZXHTTPTool.m */; };
+		D2E64FC51E965CF50077D568 /* LMZXURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F6E1E965CF50077D568 /* LMZXURLRequestSerialization.m */; };
+		D2E64FC61E965CF50077D568 /* LMZXBaseSearchDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F711E965CF50077D568 /* LMZXBaseSearchDataTool.m */; };
+		D2E64FC71E965CF50077D568 /* LMZXQueryInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64F741E965CF50077D568 /* LMZXQueryInfoModel.m */; };
+		D2E650181E96602E0077D568 /* LMZXEducationLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FD11E96602E0077D568 /* LMZXEducationLoadingVC.m */; };
+		D2E650191E96602E0077D568 /* LMZXEducationSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FD31E96602E0077D568 /* LMZXEducationSearchVC.m */; };
+		D2E6501A1E96602E0077D568 /* LMZXHouseFundLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FD61E96602E0077D568 /* LMZXHouseFundLoadingVC.m */; };
+		D2E6501B1E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FD81E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.m */; };
+		D2E6501C1E96602E0077D568 /* LMZXJdLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FDB1E96602E0077D568 /* LMZXJdLoadingVC.m */; };
+		D2E6501D1E96602E0077D568 /* LMZXJDSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FDD1E96602E0077D568 /* LMZXJDSearchVC.m */; };
+		D2E6501E1E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FE01E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.m */; };
+		D2E6501F1E96602E0077D568 /* LMZXMobileCarrieSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FE21E96602E0077D568 /* LMZXMobileCarrieSearchVC.m */; };
+		D2E650201E96602E0077D568 /* LMZXSearchCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FE51E96602E0077D568 /* LMZXSearchCellModel.m */; };
+		D2E650211E96602E0077D568 /* LMZXCommonSearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FE81E96602E0077D568 /* LMZXCommonSearchCell.m */; };
+		D2E650221E96602E0077D568 /* LMZXTaoBaoLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FEB1E96602E0077D568 /* LMZXTaoBaoLoadingVC.m */; };
+		D2E650231E96602E0077D568 /* LMZXTaobaoSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FED1E96602E0077D568 /* LMZXTaobaoSearchVC.m */; };
+		D2E650281E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FF91E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.m */; };
+		D2E650291E96602E0077D568 /* LMZXAutoinsuranceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E64FFB1E96602E0077D568 /* LMZXAutoinsuranceVC.m */; };
+		D2E6502C1E96602E0077D568 /* LMZXCentralBankLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650021E96602E0077D568 /* LMZXCentralBankLoadingVC.m */; };
+		D2E6502D1E96602E0077D568 /* LMZXCentralBankVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650041E96602E0077D568 /* LMZXCentralBankVC.m */; };
+		D2E6502E1E96602E0077D568 /* LMZXCreditBillGuideVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650071E96602E0077D568 /* LMZXCreditBillGuideVC.m */; };
+		D2E6502F1E96602E0077D568 /* LMZXCreditBillLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650091E96602E0077D568 /* LMZXCreditBillLoadingVC.m */; };
+		D2E650301E96602E0077D568 /* LMZXCreditBillNativeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6500B1E96602E0077D568 /* LMZXCreditBillNativeVC.m */; };
+		D2E650311E96602E0077D568 /* LMZXCreditBillWebVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6500D1E96602E0077D568 /* LMZXCreditBillWebVC.m */; };
+		D2E650321E96602E0077D568 /* LMZXImageBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6500F1E96602E0077D568 /* LMZXImageBtn.m */; };
+		D2E650341E96602E0077D568 /* LMZXBankBillLoadingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650141E96602E0077D568 /* LMZXBankBillLoadingVC.m */; };
+		D2E650351E96602E0077D568 /* LMZXEBankBillVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650161E96602E0077D568 /* LMZXEBankBillVC.m */; };
+		D2E650431E96616C0077D568 /* LMZXLevelSlideBar.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E650381E96616C0077D568 /* LMZXLevelSlideBar.m */; };
+		D2E650441E96616C0077D568 /* LMZXListHookCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6503A1E96616C0077D568 /* LMZXListHookCell.m */; };
+		D2E650451E96616C0077D568 /* LMZXListHookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6503C1E96616C0077D568 /* LMZXListHookModel.m */; };
+		D2E650461E96616C0077D568 /* LMZXListHookVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D2E6503E1E96616C0077D568 /* LMZXListHookVC.m */; };
+		D2E78CCF1E9CF01D00A41C6C /* lmzxResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D2E78CCE1E9CF01D00A41C6C /* lmzxResource.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3983E6AB1E8A59410013A4C8 /* LMZX_SDK_Develop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMZX_SDK_Develop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		39B7E25C1E95D57A00D5B599 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		39B7E25E1E95D66600D5B599 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		39B7E2601E95D78300D5B599 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		39B7E2621E95D79300D5B599 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		39B7E2661E95DA0D00D5B599 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		39B7E2681E95DBDA00D5B599 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		39B7E26A1E95DC1F00D5B599 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		39B7E26C1E95DC8900D5B599 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		39B7E26E1E95DCEE00D5B599 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		D2591BC91E97201F00032EE0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D2591BCA1E97201F00032EE0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D2591BCB1E97201F00032EE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D2591BCD1E97201F00032EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "Base.lproj/hehhe~.storyboard"; sourceTree = "<group>"; };
+		D2591BCF1E97201F00032EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D2591BD11E97201F00032EE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D2591BD41E97201F00032EE0 /* LMHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHomeViewController.h; sourceTree = "<group>"; };
+		D2591BD51E97201F00032EE0 /* LMHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHomeViewController.m; sourceTree = "<group>"; };
+		D2591BD61E97201F00032EE0 /* LMResultShowVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMResultShowVC.h; sourceTree = "<group>"; };
+		D2591BD71E97201F00032EE0 /* LMResultShowVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMResultShowVC.m; sourceTree = "<group>"; };
+		D2591BD81E97201F00032EE0 /* LMZXColorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXColorViewController.h; sourceTree = "<group>"; };
+		D2591BD91E97201F00032EE0 /* LMZXColorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXColorViewController.m; sourceTree = "<group>"; };
+		D2591BDB1E97201F00032EE0 /* LMHomeTypeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHomeTypeModel.h; sourceTree = "<group>"; };
+		D2591BDC1E97201F00032EE0 /* LMHomeTypeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHomeTypeModel.m; sourceTree = "<group>"; };
+		D2591BDE1E97201F00032EE0 /* LMCollectionReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCollectionReusableView.h; sourceTree = "<group>"; };
+		D2591BDF1E97201F00032EE0 /* LMCollectionReusableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCollectionReusableView.m; sourceTree = "<group>"; };
+		D2591BE01E97201F00032EE0 /* LMCollectionReusableView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMCollectionReusableView.xib; sourceTree = "<group>"; };
+		D2591BE11E97201F00032EE0 /* LMHomeCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMHomeCollectionViewCell.h; sourceTree = "<group>"; };
+		D2591BE21E97201F00032EE0 /* LMHomeCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMHomeCollectionViewCell.m; sourceTree = "<group>"; };
+		D2591BE31E97201F00032EE0 /* LMHomeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMHomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		D2591BE41E97201F00032EE0 /* homeType.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = homeType.plist; sourceTree = "<group>"; };
+		D2591BE51E97201F00032EE0 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2591BE61E97201F00032EE0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D2591BE71E97201F00032EE0 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D2591BEA1E97201F00032EE0 /* LMCustomThemeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMCustomThemeVC.h; sourceTree = "<group>"; };
+		D2591BEB1E97201F00032EE0 /* LMCustomThemeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMCustomThemeVC.m; sourceTree = "<group>"; };
+		D2591BEC1E97201F00032EE0 /* LMNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMNavigationController.h; sourceTree = "<group>"; };
+		D2591BED1E97201F00032EE0 /* LMNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMNavigationController.m; sourceTree = "<group>"; };
+		D2591BEF1E97201F00032EE0 /* LMZXAlphaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXAlphaView.h; sourceTree = "<group>"; };
+		D2591BF01E97201F00032EE0 /* LMZXAlphaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXAlphaView.m; sourceTree = "<group>"; };
+		D2591BF11E97201F00032EE0 /* LMZXColorImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXColorImageView.h; sourceTree = "<group>"; };
+		D2591BF21E97201F00032EE0 /* LMZXColorImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXColorImageView.m; sourceTree = "<group>"; };
+		D2591BF31E97201F00032EE0 /* LMZXSettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSettingCell.h; sourceTree = "<group>"; };
+		D2591BF41E97201F00032EE0 /* LMZXSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSettingCell.m; sourceTree = "<group>"; };
+		D2591BF51E97201F00032EE0 /* LMZXSettingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LMZXSettingCell.xib; sourceTree = "<group>"; };
+		D2591BF61E97201F00032EE0 /* palette.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = palette.png; sourceTree = "<group>"; };
+		D2591BF71E97201F00032EE0 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		D2591BF81E97201F00032EE0 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		D2E64EBA1E965CF50077D568 /* LMZXBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXBaseViewController.h; sourceTree = "<group>"; };
+		D2E64EBB1E965CF50077D568 /* LMZXBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXBaseViewController.m; sourceTree = "<group>"; };
+		D2E64EBC1E965CF50077D568 /* LMZXSDKNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSDKNavigationController.h; sourceTree = "<group>"; };
+		D2E64EBD1E965CF50077D568 /* LMZXSDKNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSDKNavigationController.m; sourceTree = "<group>"; };
+		D2E64EBF1E965CF50077D568 /* LMZXToast+UIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LMZXToast+UIView.h"; sourceTree = "<group>"; };
+		D2E64EC01E965CF50077D568 /* LMZXToast+UIView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LMZXToast+UIView.m"; sourceTree = "<group>"; };
+		D2E64EC11E965CF50077D568 /* NSString+LMZXCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+LMZXCommon.h"; sourceTree = "<group>"; };
+		D2E64EC21E965CF50077D568 /* NSString+LMZXCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+LMZXCommon.m"; sourceTree = "<group>"; };
+		D2E64EC31E965CF50077D568 /* UIBarButtonItem+LMZXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+LMZXExtension.h"; sourceTree = "<group>"; };
+		D2E64EC41E965CF50077D568 /* UIBarButtonItem+LMZXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+LMZXExtension.m"; sourceTree = "<group>"; };
+		D2E64EC51E965CF50077D568 /* UIButton+LMZXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+LMZXExtension.h"; sourceTree = "<group>"; };
+		D2E64EC61E965CF50077D568 /* UIButton+LMZXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+LMZXExtension.m"; sourceTree = "<group>"; };
+		D2E64EC71E965CF50077D568 /* UIImage+LMZXTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+LMZXTint.h"; sourceTree = "<group>"; };
+		D2E64EC81E965CF50077D568 /* UIImage+LMZXTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+LMZXTint.m"; sourceTree = "<group>"; };
+		D2E64EC91E965CF50077D568 /* UIImageView+LMZXExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+LMZXExtend.h"; sourceTree = "<group>"; };
+		D2E64ECA1E965CF50077D568 /* UIImageView+LMZXExtend.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+LMZXExtend.m"; sourceTree = "<group>"; };
+		D2E64ECB1E965CF50077D568 /* UILabel+LMZXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+LMZXExtension.h"; sourceTree = "<group>"; };
+		D2E64ECC1E965CF50077D568 /* UILabel+LMZXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+LMZXExtension.m"; sourceTree = "<group>"; };
+		D2E64ECD1E965CF50077D568 /* UIView+LMZXExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LMZXExtension.h"; sourceTree = "<group>"; };
+		D2E64ECE1E965CF50077D568 /* UIView+LMZXExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LMZXExtension.m"; sourceTree = "<group>"; };
+		D2E64ECF1E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+LMZXBackButtonHandler.h"; sourceTree = "<group>"; };
+		D2E64ED01E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+LMZXBackButtonHandler.m"; sourceTree = "<group>"; };
+		D2E64EE41E965CF50077D568 /* LMZXFactoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXFactoryView.h; sourceTree = "<group>"; };
+		D2E64EE51E965CF50077D568 /* LMZXFactoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXFactoryView.m; sourceTree = "<group>"; };
+		D2E64EE61E965CF50077D568 /* LMZXLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXLog.h; sourceTree = "<group>"; };
+		D2E64EE71E965CF50077D568 /* LMZXLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXLog.m; sourceTree = "<group>"; };
+		D2E64EE81E965CF50077D568 /* LMZXSMSTextFiled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSMSTextFiled.h; sourceTree = "<group>"; };
+		D2E64EE91E965CF50077D568 /* LMZXSMSTextFiled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSMSTextFiled.m; sourceTree = "<group>"; };
+		D2E64EEA1E965CF50077D568 /* LMZXTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXTool.h; sourceTree = "<group>"; };
+		D2E64EEB1E965CF50077D568 /* LMZXTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXTool.m; sourceTree = "<group>"; };
+		D2E64EED1E965CF50077D568 /* LMZXDemoAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXDemoAPI.h; sourceTree = "<group>"; };
+		D2E64EEE1E965CF50077D568 /* LMZXHomeSearchType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXHomeSearchType.h; sourceTree = "<group>"; };
+		D2E64EF01E965CF50077D568 /* LMZXSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSDK.h; sourceTree = "<group>"; };
+		D2E64EF11E965CF50077D568 /* LMZXSDK.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSDK.m; sourceTree = "<group>"; };
+		D2E64F0B1E965CF50077D568 /* LMZXPopTextFiledView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXPopTextFiledView.h; sourceTree = "<group>"; };
+		D2E64F0C1E965CF50077D568 /* LMZXPopTextFiledView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXPopTextFiledView.m; sourceTree = "<group>"; };
+		D2E64F0E1E965CF50077D568 /* LMZXCityListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCityListCell.h; sourceTree = "<group>"; };
+		D2E64F0F1E965CF50077D568 /* LMZXCityListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCityListCell.m; sourceTree = "<group>"; };
+		D2E64F101E965CF50077D568 /* LMZXCityListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCityListViewController.h; sourceTree = "<group>"; };
+		D2E64F111E965CF50077D568 /* LMZXCityListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCityListViewController.m; sourceTree = "<group>"; };
+		D2E64F121E965CF50077D568 /* LMZXCityLocationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCityLocationView.h; sourceTree = "<group>"; };
+		D2E64F131E965CF50077D568 /* LMZXCityLocationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCityLocationView.m; sourceTree = "<group>"; };
+		D2E64F141E965CF50077D568 /* LMZXCityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCityModel.h; sourceTree = "<group>"; };
+		D2E64F151E965CF50077D568 /* LMZXCityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCityModel.m; sourceTree = "<group>"; };
+		D2E64F161E965CF50077D568 /* LMZXCitySearchResultVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCitySearchResultVC.h; sourceTree = "<group>"; };
+		D2E64F171E965CF50077D568 /* LMZXCitySearchResultVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCitySearchResultVC.m; sourceTree = "<group>"; };
+		D2E64F191E965CF50077D568 /* LMZXSearchBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSearchBaseVC.h; sourceTree = "<group>"; };
+		D2E64F1A1E965CF50077D568 /* LMZXSearchBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSearchBaseVC.m; sourceTree = "<group>"; };
+		D2E64F1D1E965CF50077D568 /* LMZXLoadingAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXLoadingAnimation.h; sourceTree = "<group>"; };
+		D2E64F1E1E965CF50077D568 /* LMZXLoadingAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXLoadingAnimation.m; sourceTree = "<group>"; };
+		D2E64F1F1E965CF50077D568 /* LMZXLoadingManagerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXLoadingManagerView.h; sourceTree = "<group>"; };
+		D2E64F201E965CF50077D568 /* LMZXLoadingManagerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXLoadingManagerView.m; sourceTree = "<group>"; };
+		D2E64F211E965CF50077D568 /* LMZXLoadingReportBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXLoadingReportBaseVC.h; sourceTree = "<group>"; };
+		D2E64F221E965CF50077D568 /* LMZXLoadingReportBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXLoadingReportBaseVC.m; sourceTree = "<group>"; };
+		D2E64F3C1E965CF50077D568 /* LMZXTBProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXTBProtocol.h; sourceTree = "<group>"; };
+		D2E64F3D1E965CF50077D568 /* LMZXTBProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXTBProtocol.m; sourceTree = "<group>"; };
+		D2E64F3E1E965CF50077D568 /* LMZXWebNetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXWebNetWork.h; sourceTree = "<group>"; };
+		D2E64F3F1E965CF50077D568 /* LMZXWebNetWork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXWebNetWork.m; sourceTree = "<group>"; };
+		D2E64F401E965CF50077D568 /* LMZXWebViewBaseVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXWebViewBaseVC.h; sourceTree = "<group>"; };
+		D2E64F411E965CF50077D568 /* LMZXWebViewBaseVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXWebViewBaseVC.m; sourceTree = "<group>"; };
+		D2E64F4B1E965CF50077D568 /* LMZXAnalysisWebModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXAnalysisWebModel.h; sourceTree = "<group>"; };
+		D2E64F4C1E965CF50077D568 /* LMZXAnalysisWebModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXAnalysisWebModel.m; sourceTree = "<group>"; };
+		D2E64F4D1E965CF50077D568 /* LMZXReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXReachability.h; sourceTree = "<group>"; };
+		D2E64F4E1E965CF50077D568 /* LMZXReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXReachability.m; sourceTree = "<group>"; };
+		D2E64F4F1E965CF50077D568 /* LMZXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXWebViewController.h; sourceTree = "<group>"; };
+		D2E64F501E965CF50077D568 /* LMZXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXWebViewController.m; sourceTree = "<group>"; };
+		D2E64F521E965CF50077D568 /* LMZXWebBusinessVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXWebBusinessVC.h; sourceTree = "<group>"; };
+		D2E64F531E965CF50077D568 /* LMZXWebBusinessVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXWebBusinessVC.m; sourceTree = "<group>"; };
+		D2E64F6B1E965CF50077D568 /* LMZXHTTPTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXHTTPTool.h; sourceTree = "<group>"; };
+		D2E64F6C1E965CF50077D568 /* LMZXHTTPTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXHTTPTool.m; sourceTree = "<group>"; };
+		D2E64F6D1E965CF50077D568 /* LMZXURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXURLRequestSerialization.h; sourceTree = "<group>"; };
+		D2E64F6E1E965CF50077D568 /* LMZXURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXURLRequestSerialization.m; sourceTree = "<group>"; };
+		D2E64F701E965CF50077D568 /* LMZXBaseSearchDataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXBaseSearchDataTool.h; sourceTree = "<group>"; };
+		D2E64F711E965CF50077D568 /* LMZXBaseSearchDataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXBaseSearchDataTool.m; sourceTree = "<group>"; };
+		D2E64F731E965CF50077D568 /* LMZXQueryInfoModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXQueryInfoModel.h; sourceTree = "<group>"; };
+		D2E64F741E965CF50077D568 /* LMZXQueryInfoModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXQueryInfoModel.m; sourceTree = "<group>"; };
+		D2E64FD01E96602E0077D568 /* LMZXEducationLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXEducationLoadingVC.h; sourceTree = "<group>"; };
+		D2E64FD11E96602E0077D568 /* LMZXEducationLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXEducationLoadingVC.m; sourceTree = "<group>"; };
+		D2E64FD21E96602E0077D568 /* LMZXEducationSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXEducationSearchVC.h; sourceTree = "<group>"; };
+		D2E64FD31E96602E0077D568 /* LMZXEducationSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXEducationSearchVC.m; sourceTree = "<group>"; };
+		D2E64FD51E96602E0077D568 /* LMZXHouseFundLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXHouseFundLoadingVC.h; sourceTree = "<group>"; };
+		D2E64FD61E96602E0077D568 /* LMZXHouseFundLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXHouseFundLoadingVC.m; sourceTree = "<group>"; };
+		D2E64FD71E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXHouseFundSocialSecuritySearchVC.h; sourceTree = "<group>"; };
+		D2E64FD81E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXHouseFundSocialSecuritySearchVC.m; sourceTree = "<group>"; };
+		D2E64FDA1E96602E0077D568 /* LMZXJdLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXJdLoadingVC.h; sourceTree = "<group>"; };
+		D2E64FDB1E96602E0077D568 /* LMZXJdLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXJdLoadingVC.m; sourceTree = "<group>"; };
+		D2E64FDC1E96602E0077D568 /* LMZXJDSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXJDSearchVC.h; sourceTree = "<group>"; };
+		D2E64FDD1E96602E0077D568 /* LMZXJDSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXJDSearchVC.m; sourceTree = "<group>"; };
+		D2E64FDF1E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXMobilCarrieLoadingAnimationVC.h; sourceTree = "<group>"; };
+		D2E64FE01E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXMobilCarrieLoadingAnimationVC.m; sourceTree = "<group>"; };
+		D2E64FE11E96602E0077D568 /* LMZXMobileCarrieSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXMobileCarrieSearchVC.h; sourceTree = "<group>"; };
+		D2E64FE21E96602E0077D568 /* LMZXMobileCarrieSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXMobileCarrieSearchVC.m; sourceTree = "<group>"; };
+		D2E64FE41E96602E0077D568 /* LMZXSearchCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXSearchCellModel.h; sourceTree = "<group>"; };
+		D2E64FE51E96602E0077D568 /* LMZXSearchCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXSearchCellModel.m; sourceTree = "<group>"; };
+		D2E64FE71E96602E0077D568 /* LMZXCommonSearchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCommonSearchCell.h; sourceTree = "<group>"; };
+		D2E64FE81E96602E0077D568 /* LMZXCommonSearchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCommonSearchCell.m; sourceTree = "<group>"; };
+		D2E64FEA1E96602E0077D568 /* LMZXTaoBaoLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXTaoBaoLoadingVC.h; sourceTree = "<group>"; };
+		D2E64FEB1E96602E0077D568 /* LMZXTaoBaoLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXTaoBaoLoadingVC.m; sourceTree = "<group>"; };
+		D2E64FEC1E96602E0077D568 /* LMZXTaobaoSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXTaobaoSearchVC.h; sourceTree = "<group>"; };
+		D2E64FED1E96602E0077D568 /* LMZXTaobaoSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXTaobaoSearchVC.m; sourceTree = "<group>"; };
+		D2E64FF81E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXAutoInsuranceLoadingVC.h; sourceTree = "<group>"; };
+		D2E64FF91E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXAutoInsuranceLoadingVC.m; sourceTree = "<group>"; };
+		D2E64FFA1E96602E0077D568 /* LMZXAutoinsuranceVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXAutoinsuranceVC.h; sourceTree = "<group>"; };
+		D2E64FFB1E96602E0077D568 /* LMZXAutoinsuranceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXAutoinsuranceVC.m; sourceTree = "<group>"; };
+		D2E650011E96602E0077D568 /* LMZXCentralBankLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCentralBankLoadingVC.h; sourceTree = "<group>"; };
+		D2E650021E96602E0077D568 /* LMZXCentralBankLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCentralBankLoadingVC.m; sourceTree = "<group>"; };
+		D2E650031E96602E0077D568 /* LMZXCentralBankVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCentralBankVC.h; sourceTree = "<group>"; };
+		D2E650041E96602E0077D568 /* LMZXCentralBankVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCentralBankVC.m; sourceTree = "<group>"; };
+		D2E650061E96602E0077D568 /* LMZXCreditBillGuideVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCreditBillGuideVC.h; sourceTree = "<group>"; };
+		D2E650071E96602E0077D568 /* LMZXCreditBillGuideVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCreditBillGuideVC.m; sourceTree = "<group>"; };
+		D2E650081E96602E0077D568 /* LMZXCreditBillLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCreditBillLoadingVC.h; sourceTree = "<group>"; };
+		D2E650091E96602E0077D568 /* LMZXCreditBillLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCreditBillLoadingVC.m; sourceTree = "<group>"; };
+		D2E6500A1E96602E0077D568 /* LMZXCreditBillNativeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCreditBillNativeVC.h; sourceTree = "<group>"; };
+		D2E6500B1E96602E0077D568 /* LMZXCreditBillNativeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCreditBillNativeVC.m; sourceTree = "<group>"; };
+		D2E6500C1E96602E0077D568 /* LMZXCreditBillWebVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXCreditBillWebVC.h; sourceTree = "<group>"; };
+		D2E6500D1E96602E0077D568 /* LMZXCreditBillWebVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXCreditBillWebVC.m; sourceTree = "<group>"; };
+		D2E6500E1E96602E0077D568 /* LMZXImageBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXImageBtn.h; sourceTree = "<group>"; };
+		D2E6500F1E96602E0077D568 /* LMZXImageBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXImageBtn.m; sourceTree = "<group>"; };
+		D2E650131E96602E0077D568 /* LMZXBankBillLoadingVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXBankBillLoadingVC.h; sourceTree = "<group>"; };
+		D2E650141E96602E0077D568 /* LMZXBankBillLoadingVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXBankBillLoadingVC.m; sourceTree = "<group>"; };
+		D2E650151E96602E0077D568 /* LMZXEBankBillVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXEBankBillVC.h; sourceTree = "<group>"; };
+		D2E650161E96602E0077D568 /* LMZXEBankBillVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXEBankBillVC.m; sourceTree = "<group>"; };
+		D2E650371E96616C0077D568 /* LMZXLevelSlideBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXLevelSlideBar.h; sourceTree = "<group>"; };
+		D2E650381E96616C0077D568 /* LMZXLevelSlideBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXLevelSlideBar.m; sourceTree = "<group>"; };
+		D2E650391E96616C0077D568 /* LMZXListHookCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXListHookCell.h; sourceTree = "<group>"; };
+		D2E6503A1E96616C0077D568 /* LMZXListHookCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXListHookCell.m; sourceTree = "<group>"; };
+		D2E6503B1E96616C0077D568 /* LMZXListHookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXListHookModel.h; sourceTree = "<group>"; };
+		D2E6503C1E96616C0077D568 /* LMZXListHookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXListHookModel.m; sourceTree = "<group>"; };
+		D2E6503D1E96616C0077D568 /* LMZXListHookVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMZXListHookVC.h; sourceTree = "<group>"; };
+		D2E6503E1E96616C0077D568 /* LMZXListHookVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMZXListHookVC.m; sourceTree = "<group>"; };
+		D2E78CCE1E9CF01D00A41C6C /* lmzxResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = lmzxResource.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3983E6A81E8A59410013A4C8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3983E6A21E8A59410013A4C8 = {
+			isa = PBXGroup;
+			children = (
+				D2E78CCE1E9CF01D00A41C6C /* lmzxResource.bundle */,
+				D2E64EB71E965CF50077D568 /* LMZXSDK */,
+				D2591BC81E97201F00032EE0 /* LMZX_SDK_Develop */,
+				3983E6AC1E8A59410013A4C8 /* Products */,
+				39B7E25B1E95D57A00D5B599 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3983E6AC1E8A59410013A4C8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3983E6AB1E8A59410013A4C8 /* LMZX_SDK_Develop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		39B7E25B1E95D57A00D5B599 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				39B7E26E1E95DCEE00D5B599 /* CoreImage.framework */,
+				39B7E26C1E95DC8900D5B599 /* CFNetwork.framework */,
+				39B7E26A1E95DC1F00D5B599 /* Foundation.framework */,
+				39B7E2681E95DBDA00D5B599 /* UIKit.framework */,
+				39B7E2661E95DA0D00D5B599 /* MobileCoreServices.framework */,
+				39B7E2621E95D79300D5B599 /* LocalAuthentication.framework */,
+				39B7E2601E95D78300D5B599 /* CoreLocation.framework */,
+				39B7E25E1E95D66600D5B599 /* CoreFoundation.framework */,
+				39B7E25C1E95D57A00D5B599 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D2591BC81E97201F00032EE0 /* LMZX_SDK_Develop */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BC91E97201F00032EE0 /* AppDelegate.h */,
+				D2591BCA1E97201F00032EE0 /* AppDelegate.m */,
+				D2591BCB1E97201F00032EE0 /* Assets.xcassets */,
+				D2591BCC1E97201F00032EE0 /* hehhe~.storyboard */,
+				D2591BCE1E97201F00032EE0 /* LaunchScreen.storyboard */,
+				D2591BD01E97201F00032EE0 /* Main.storyboard */,
+				D2591BD21E97201F00032EE0 /* Data */,
+				D2591BE41E97201F00032EE0 /* homeType.plist */,
+				D2591BE51E97201F00032EE0 /* Info.plist */,
+				D2591BE61E97201F00032EE0 /* main.m */,
+				D2591BE71E97201F00032EE0 /* PrefixHeader.pch */,
+				D2591BE81E97201F00032EE0 /* Setting */,
+				D2591BF71E97201F00032EE0 /* UIColor+Extension.h */,
+				D2591BF81E97201F00032EE0 /* UIColor+Extension.m */,
+			);
+			name = LMZX_SDK_Develop;
+			path = LMZX_SDKDemo_OC;
+			sourceTree = "<group>";
+		};
+		D2591BD21E97201F00032EE0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BD31E97201F00032EE0 /* Controller */,
+				D2591BDA1E97201F00032EE0 /* Model */,
+				D2591BDD1E97201F00032EE0 /* View */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D2591BD31E97201F00032EE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BD41E97201F00032EE0 /* LMHomeViewController.h */,
+				D2591BD51E97201F00032EE0 /* LMHomeViewController.m */,
+				D2591BD61E97201F00032EE0 /* LMResultShowVC.h */,
+				D2591BD71E97201F00032EE0 /* LMResultShowVC.m */,
+				D2591BD81E97201F00032EE0 /* LMZXColorViewController.h */,
+				D2591BD91E97201F00032EE0 /* LMZXColorViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2591BDA1E97201F00032EE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BDB1E97201F00032EE0 /* LMHomeTypeModel.h */,
+				D2591BDC1E97201F00032EE0 /* LMHomeTypeModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2591BDD1E97201F00032EE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BDE1E97201F00032EE0 /* LMCollectionReusableView.h */,
+				D2591BDF1E97201F00032EE0 /* LMCollectionReusableView.m */,
+				D2591BE01E97201F00032EE0 /* LMCollectionReusableView.xib */,
+				D2591BE11E97201F00032EE0 /* LMHomeCollectionViewCell.h */,
+				D2591BE21E97201F00032EE0 /* LMHomeCollectionViewCell.m */,
+				D2591BE31E97201F00032EE0 /* LMHomeCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2591BE81E97201F00032EE0 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BE91E97201F00032EE0 /* Controller */,
+				D2591BEE1E97201F00032EE0 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		D2591BE91E97201F00032EE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BEA1E97201F00032EE0 /* LMCustomThemeVC.h */,
+				D2591BEB1E97201F00032EE0 /* LMCustomThemeVC.m */,
+				D2591BEC1E97201F00032EE0 /* LMNavigationController.h */,
+				D2591BED1E97201F00032EE0 /* LMNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D2591BEE1E97201F00032EE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2591BEF1E97201F00032EE0 /* LMZXAlphaView.h */,
+				D2591BF01E97201F00032EE0 /* LMZXAlphaView.m */,
+				D2591BF11E97201F00032EE0 /* LMZXColorImageView.h */,
+				D2591BF21E97201F00032EE0 /* LMZXColorImageView.m */,
+				D2591BF31E97201F00032EE0 /* LMZXSettingCell.h */,
+				D2591BF41E97201F00032EE0 /* LMZXSettingCell.m */,
+				D2591BF51E97201F00032EE0 /* LMZXSettingCell.xib */,
+				D2591BF61E97201F00032EE0 /* palette.png */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D2E64EB71E965CF50077D568 /* LMZXSDK */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64EED1E965CF50077D568 /* LMZXDemoAPI.h */,
+				D2E64EEE1E965CF50077D568 /* LMZXHomeSearchType.h */,
+				D2E64EF01E965CF50077D568 /* LMZXSDK.h */,
+				D2E64EF11E965CF50077D568 /* LMZXSDK.m */,
+				D2E64EB91E965CF50077D568 /* 基础 VC */,
+				D2E64EBE1E965CF50077D568 /* Category */,
+				D2E64ED11E965CF50077D568 /* CommonClass */,
+				D2E64EF21E965CF50077D568 /* Modules */,
+			);
+			path = LMZXSDK;
+			sourceTree = "<group>";
+		};
+		D2E64EB91E965CF50077D568 /* 基础 VC */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64EBA1E965CF50077D568 /* LMZXBaseViewController.h */,
+				D2E64EBB1E965CF50077D568 /* LMZXBaseViewController.m */,
+				D2E64EBC1E965CF50077D568 /* LMZXSDKNavigationController.h */,
+				D2E64EBD1E965CF50077D568 /* LMZXSDKNavigationController.m */,
+			);
+			name = "基础 VC";
+			path = BaseVC;
+			sourceTree = "<group>";
+		};
+		D2E64EBE1E965CF50077D568 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64EBF1E965CF50077D568 /* LMZXToast+UIView.h */,
+				D2E64EC01E965CF50077D568 /* LMZXToast+UIView.m */,
+				D2E64EC11E965CF50077D568 /* NSString+LMZXCommon.h */,
+				D2E64EC21E965CF50077D568 /* NSString+LMZXCommon.m */,
+				D2E64EC31E965CF50077D568 /* UIBarButtonItem+LMZXExtension.h */,
+				D2E64EC41E965CF50077D568 /* UIBarButtonItem+LMZXExtension.m */,
+				D2E64EC51E965CF50077D568 /* UIButton+LMZXExtension.h */,
+				D2E64EC61E965CF50077D568 /* UIButton+LMZXExtension.m */,
+				D2E64EC71E965CF50077D568 /* UIImage+LMZXTint.h */,
+				D2E64EC81E965CF50077D568 /* UIImage+LMZXTint.m */,
+				D2E64EC91E965CF50077D568 /* UIImageView+LMZXExtend.h */,
+				D2E64ECA1E965CF50077D568 /* UIImageView+LMZXExtend.m */,
+				D2E64ECB1E965CF50077D568 /* UILabel+LMZXExtension.h */,
+				D2E64ECC1E965CF50077D568 /* UILabel+LMZXExtension.m */,
+				D2E64ECD1E965CF50077D568 /* UIView+LMZXExtension.h */,
+				D2E64ECE1E965CF50077D568 /* UIView+LMZXExtension.m */,
+				D2E64ECF1E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.h */,
+				D2E64ED01E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D2E64ED11E965CF50077D568 /* CommonClass */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64EE41E965CF50077D568 /* LMZXFactoryView.h */,
+				D2E64EE51E965CF50077D568 /* LMZXFactoryView.m */,
+				D2E64EE61E965CF50077D568 /* LMZXLog.h */,
+				D2E64EE71E965CF50077D568 /* LMZXLog.m */,
+				D2E64EE81E965CF50077D568 /* LMZXSMSTextFiled.h */,
+				D2E64EE91E965CF50077D568 /* LMZXSMSTextFiled.m */,
+				D2E64EEA1E965CF50077D568 /* LMZXTool.h */,
+				D2E64EEB1E965CF50077D568 /* LMZXTool.m */,
+			);
+			path = CommonClass;
+			sourceTree = "<group>";
+		};
+		D2E64EF21E965CF50077D568 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FCE1E96602E0077D568 /* 1期 */,
+				D2E64FEE1E96602E0077D568 /* 2期 */,
+				D2E64F091E965CF50077D568 /* 通用模块 */,
+				D2E64F3A1E965CF50077D568 /* H5 模块 */,
+				D2E64F691E965CF50077D568 /* 网络轮训模块 */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		D2E64F091E965CF50077D568 /* 通用模块 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F0A1E965CF50077D568 /* 验证码 */,
+				D2E64F0D1E965CF50077D568 /* 城市列表 */,
+				D2E64F181E965CF50077D568 /* 基类 */,
+				D2E64F1B1E965CF50077D568 /* 动画 */,
+			);
+			name = "通用模块";
+			path = Common;
+			sourceTree = "<group>";
+		};
+		D2E64F0A1E965CF50077D568 /* 验证码 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F0B1E965CF50077D568 /* LMZXPopTextFiledView.h */,
+				D2E64F0C1E965CF50077D568 /* LMZXPopTextFiledView.m */,
+			);
+			name = "验证码";
+			path = AuthCode;
+			sourceTree = "<group>";
+		};
+		D2E64F0D1E965CF50077D568 /* 城市列表 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F0E1E965CF50077D568 /* LMZXCityListCell.h */,
+				D2E64F0F1E965CF50077D568 /* LMZXCityListCell.m */,
+				D2E64F101E965CF50077D568 /* LMZXCityListViewController.h */,
+				D2E64F111E965CF50077D568 /* LMZXCityListViewController.m */,
+				D2E64F121E965CF50077D568 /* LMZXCityLocationView.h */,
+				D2E64F131E965CF50077D568 /* LMZXCityLocationView.m */,
+				D2E64F141E965CF50077D568 /* LMZXCityModel.h */,
+				D2E64F151E965CF50077D568 /* LMZXCityModel.m */,
+				D2E64F161E965CF50077D568 /* LMZXCitySearchResultVC.h */,
+				D2E64F171E965CF50077D568 /* LMZXCitySearchResultVC.m */,
+			);
+			name = "城市列表";
+			path = CityList;
+			sourceTree = "<group>";
+		};
+		D2E64F181E965CF50077D568 /* 基类 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F191E965CF50077D568 /* LMZXSearchBaseVC.h */,
+				D2E64F1A1E965CF50077D568 /* LMZXSearchBaseVC.m */,
+			);
+			name = "基类";
+			path = CommonBaseVC;
+			sourceTree = "<group>";
+		};
+		D2E64F1B1E965CF50077D568 /* 动画 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F1C1E965CF50077D568 /* JLoadingView */,
+				D2E64F211E965CF50077D568 /* LMZXLoadingReportBaseVC.h */,
+				D2E64F221E965CF50077D568 /* LMZXLoadingReportBaseVC.m */,
+			);
+			name = "动画";
+			path = LoadingReportVC;
+			sourceTree = "<group>";
+		};
+		D2E64F1C1E965CF50077D568 /* JLoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F1D1E965CF50077D568 /* LMZXLoadingAnimation.h */,
+				D2E64F1E1E965CF50077D568 /* LMZXLoadingAnimation.m */,
+				D2E64F1F1E965CF50077D568 /* LMZXLoadingManagerView.h */,
+				D2E64F201E965CF50077D568 /* LMZXLoadingManagerView.m */,
+			);
+			path = JLoadingView;
+			sourceTree = "<group>";
+		};
+		D2E64F3A1E965CF50077D568 /* H5 模块 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F3B1E965CF50077D568 /* 基础类 */,
+				D2E64F511E965CF50077D568 /* 淘宝JD */,
+				D2E64F4B1E965CF50077D568 /* LMZXAnalysisWebModel.h */,
+				D2E64F4C1E965CF50077D568 /* LMZXAnalysisWebModel.m */,
+				D2E64F4D1E965CF50077D568 /* LMZXReachability.h */,
+				D2E64F4E1E965CF50077D568 /* LMZXReachability.m */,
+				D2E64F4F1E965CF50077D568 /* LMZXWebViewController.h */,
+				D2E64F501E965CF50077D568 /* LMZXWebViewController.m */,
+			);
+			name = "H5 模块";
+			path = H5;
+			sourceTree = "<group>";
+		};
+		D2E64F3B1E965CF50077D568 /* 基础类 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F3C1E965CF50077D568 /* LMZXTBProtocol.h */,
+				D2E64F3D1E965CF50077D568 /* LMZXTBProtocol.m */,
+				D2E64F3E1E965CF50077D568 /* LMZXWebNetWork.h */,
+				D2E64F3F1E965CF50077D568 /* LMZXWebNetWork.m */,
+				D2E64F401E965CF50077D568 /* LMZXWebViewBaseVC.h */,
+				D2E64F411E965CF50077D568 /* LMZXWebViewBaseVC.m */,
+			);
+			name = "基础类";
+			path = BaseWidget;
+			sourceTree = "<group>";
+		};
+		D2E64F511E965CF50077D568 /* 淘宝JD */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F521E965CF50077D568 /* LMZXWebBusinessVC.h */,
+				D2E64F531E965CF50077D568 /* LMZXWebBusinessVC.m */,
+			);
+			name = "淘宝JD";
+			path = TaobaoH5;
+			sourceTree = "<group>";
+		};
+		D2E64F691E965CF50077D568 /* 网络轮训模块 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F6A1E965CF50077D568 /* HTTPTools */,
+				D2E64F6F1E965CF50077D568 /* OpretationTool */,
+			);
+			name = "网络轮训模块";
+			path = NetModules;
+			sourceTree = "<group>";
+		};
+		D2E64F6A1E965CF50077D568 /* HTTPTools */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F6B1E965CF50077D568 /* LMZXHTTPTool.h */,
+				D2E64F6C1E965CF50077D568 /* LMZXHTTPTool.m */,
+				D2E64F6D1E965CF50077D568 /* LMZXURLRequestSerialization.h */,
+				D2E64F6E1E965CF50077D568 /* LMZXURLRequestSerialization.m */,
+			);
+			path = HTTPTools;
+			sourceTree = "<group>";
+		};
+		D2E64F6F1E965CF50077D568 /* OpretationTool */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F701E965CF50077D568 /* LMZXBaseSearchDataTool.h */,
+				D2E64F711E965CF50077D568 /* LMZXBaseSearchDataTool.m */,
+				D2E64F721E965CF50077D568 /* Model */,
+			);
+			path = OpretationTool;
+			sourceTree = "<group>";
+		};
+		D2E64F721E965CF50077D568 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64F731E965CF50077D568 /* LMZXQueryInfoModel.h */,
+				D2E64F741E965CF50077D568 /* LMZXQueryInfoModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2E64FCE1E96602E0077D568 /* 1期 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FCF1E96602E0077D568 /* 学信 */,
+				D2E64FD41E96602E0077D568 /* 公积金社保 */,
+				D2E64FD91E96602E0077D568 /* JD */,
+				D2E64FDE1E96602E0077D568 /* 运营商 */,
+				D2E64FE91E96602E0077D568 /* 淘宝 */,
+			);
+			name = "1期";
+			path = V1;
+			sourceTree = "<group>";
+		};
+		D2E64FCF1E96602E0077D568 /* 学信 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FD01E96602E0077D568 /* LMZXEducationLoadingVC.h */,
+				D2E64FD11E96602E0077D568 /* LMZXEducationLoadingVC.m */,
+				D2E64FD21E96602E0077D568 /* LMZXEducationSearchVC.h */,
+				D2E64FD31E96602E0077D568 /* LMZXEducationSearchVC.m */,
+			);
+			name = "学信";
+			path = Education;
+			sourceTree = "<group>";
+		};
+		D2E64FD41E96602E0077D568 /* 公积金社保 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FD51E96602E0077D568 /* LMZXHouseFundLoadingVC.h */,
+				D2E64FD61E96602E0077D568 /* LMZXHouseFundLoadingVC.m */,
+				D2E64FD71E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.h */,
+				D2E64FD81E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.m */,
+			);
+			name = "公积金社保";
+			path = HouseFund;
+			sourceTree = "<group>";
+		};
+		D2E64FD91E96602E0077D568 /* JD */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FDA1E96602E0077D568 /* LMZXJdLoadingVC.h */,
+				D2E64FDB1E96602E0077D568 /* LMZXJdLoadingVC.m */,
+				D2E64FDC1E96602E0077D568 /* LMZXJDSearchVC.h */,
+				D2E64FDD1E96602E0077D568 /* LMZXJDSearchVC.m */,
+			);
+			name = JD;
+			path = jd;
+			sourceTree = "<group>";
+		};
+		D2E64FDE1E96602E0077D568 /* 运营商 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FDF1E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.h */,
+				D2E64FE01E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.m */,
+				D2E64FE11E96602E0077D568 /* LMZXMobileCarrieSearchVC.h */,
+				D2E64FE21E96602E0077D568 /* LMZXMobileCarrieSearchVC.m */,
+				D2E64FE31E96602E0077D568 /* Model */,
+				D2E64FE61E96602E0077D568 /* views */,
+			);
+			name = "运营商";
+			path = MobileCarrie;
+			sourceTree = "<group>";
+		};
+		D2E64FE31E96602E0077D568 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FE41E96602E0077D568 /* LMZXSearchCellModel.h */,
+				D2E64FE51E96602E0077D568 /* LMZXSearchCellModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D2E64FE61E96602E0077D568 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FE71E96602E0077D568 /* LMZXCommonSearchCell.h */,
+				D2E64FE81E96602E0077D568 /* LMZXCommonSearchCell.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		D2E64FE91E96602E0077D568 /* 淘宝 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FEA1E96602E0077D568 /* LMZXTaoBaoLoadingVC.h */,
+				D2E64FEB1E96602E0077D568 /* LMZXTaoBaoLoadingVC.m */,
+				D2E64FEC1E96602E0077D568 /* LMZXTaobaoSearchVC.h */,
+				D2E64FED1E96602E0077D568 /* LMZXTaobaoSearchVC.m */,
+			);
+			name = "淘宝";
+			path = Taobao;
+			sourceTree = "<group>";
+		};
+		D2E64FEE1E96602E0077D568 /* 2期 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E64FEF1E96602E0077D568 /* 车险 */,
+				D2E650001E96602E0077D568 /* 央行征信 */,
+				D2E650051E96602E0077D568 /* 信用卡账单 */,
+				D2E650121E96602E0077D568 /* 网银 */,
+			);
+			name = "2期";
+			path = V2;
+			sourceTree = "<group>";
+		};
+		D2E64FEF1E96602E0077D568 /* 车险 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E650361E96616C0077D568 /* model VC */,
+				D2E64FF81E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.h */,
+				D2E64FF91E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.m */,
+				D2E64FFA1E96602E0077D568 /* LMZXAutoinsuranceVC.h */,
+				D2E64FFB1E96602E0077D568 /* LMZXAutoinsuranceVC.m */,
+			);
+			name = "车险";
+			path = Autoinsurance;
+			sourceTree = "<group>";
+		};
+		D2E650001E96602E0077D568 /* 央行征信 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E650011E96602E0077D568 /* LMZXCentralBankLoadingVC.h */,
+				D2E650021E96602E0077D568 /* LMZXCentralBankLoadingVC.m */,
+				D2E650031E96602E0077D568 /* LMZXCentralBankVC.h */,
+				D2E650041E96602E0077D568 /* LMZXCentralBankVC.m */,
+			);
+			name = "央行征信";
+			path = CentralBank;
+			sourceTree = "<group>";
+		};
+		D2E650051E96602E0077D568 /* 信用卡账单 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E650061E96602E0077D568 /* LMZXCreditBillGuideVC.h */,
+				D2E650071E96602E0077D568 /* LMZXCreditBillGuideVC.m */,
+				D2E650081E96602E0077D568 /* LMZXCreditBillLoadingVC.h */,
+				D2E650091E96602E0077D568 /* LMZXCreditBillLoadingVC.m */,
+				D2E6500A1E96602E0077D568 /* LMZXCreditBillNativeVC.h */,
+				D2E6500B1E96602E0077D568 /* LMZXCreditBillNativeVC.m */,
+				D2E6500C1E96602E0077D568 /* LMZXCreditBillWebVC.h */,
+				D2E6500D1E96602E0077D568 /* LMZXCreditBillWebVC.m */,
+				D2E6500E1E96602E0077D568 /* LMZXImageBtn.h */,
+				D2E6500F1E96602E0077D568 /* LMZXImageBtn.m */,
+			);
+			name = "信用卡账单";
+			path = CreditCardBill;
+			sourceTree = "<group>";
+		};
+		D2E650121E96602E0077D568 /* 网银 */ = {
+			isa = PBXGroup;
+			children = (
+				D2E650131E96602E0077D568 /* LMZXBankBillLoadingVC.h */,
+				D2E650141E96602E0077D568 /* LMZXBankBillLoadingVC.m */,
+				D2E650151E96602E0077D568 /* LMZXEBankBillVC.h */,
+				D2E650161E96602E0077D568 /* LMZXEBankBillVC.m */,
+			);
+			name = "网银";
+			path = EBankBill;
+			sourceTree = "<group>";
+		};
+		D2E650361E96616C0077D568 /* model VC */ = {
+			isa = PBXGroup;
+			children = (
+				D2E650371E96616C0077D568 /* LMZXLevelSlideBar.h */,
+				D2E650381E96616C0077D568 /* LMZXLevelSlideBar.m */,
+				D2E650391E96616C0077D568 /* LMZXListHookCell.h */,
+				D2E6503A1E96616C0077D568 /* LMZXListHookCell.m */,
+				D2E6503B1E96616C0077D568 /* LMZXListHookModel.h */,
+				D2E6503C1E96616C0077D568 /* LMZXListHookModel.m */,
+				D2E6503D1E96616C0077D568 /* LMZXListHookVC.h */,
+				D2E6503E1E96616C0077D568 /* LMZXListHookVC.m */,
+			);
+			path = "model VC";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3983E6AA1E8A59410013A4C8 /* LMZX_SDK_Develop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3983E6D81E8A59410013A4C8 /* Build configuration list for PBXNativeTarget "LMZX_SDK_Develop" */;
+			buildPhases = (
+				3983E6A71E8A59410013A4C8 /* Sources */,
+				3983E6A81E8A59410013A4C8 /* Frameworks */,
+				3983E6A91E8A59410013A4C8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LMZX_SDK_Develop;
+			productName = LMZX_SDKDemo_OC;
+			productReference = 3983E6AB1E8A59410013A4C8 /* LMZX_SDK_Develop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3983E6A31E8A59410013A4C8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = 99baozi;
+				TargetAttributes = {
+					3983E6AA1E8A59410013A4C8 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 28W82NWSCE;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3983E6A61E8A59410013A4C8 /* Build configuration list for PBXProject "LMZX_SDK_Develop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3983E6A21E8A59410013A4C8;
+			productRefGroup = 3983E6AC1E8A59410013A4C8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3983E6AA1E8A59410013A4C8 /* LMZX_SDK_Develop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3983E6A91E8A59410013A4C8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2591BFB1E97201F00032EE0 /* hehhe~.storyboard in Resources */,
+				D2591BFD1E97201F00032EE0 /* Main.storyboard in Resources */,
+				D2E78CCF1E9CF01D00A41C6C /* lmzxResource.bundle in Resources */,
+				D2591C071E97201F00032EE0 /* Info.plist in Resources */,
+				D2591C0E1E97201F00032EE0 /* LMZXSettingCell.xib in Resources */,
+				D2591C031E97201F00032EE0 /* LMCollectionReusableView.xib in Resources */,
+				D2591C061E97201F00032EE0 /* homeType.plist in Resources */,
+				D2591C051E97201F00032EE0 /* LMHomeCollectionViewCell.xib in Resources */,
+				D2591C0F1E97201F00032EE0 /* palette.png in Resources */,
+				D2591BFC1E97201F00032EE0 /* LaunchScreen.storyboard in Resources */,
+				D2591BFA1E97201F00032EE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3983E6A71E8A59410013A4C8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D2E650291E96602E0077D568 /* LMZXAutoinsuranceVC.m in Sources */,
+				D2591C0C1E97201F00032EE0 /* LMZXColorImageView.m in Sources */,
+				D2591BFE1E97201F00032EE0 /* LMHomeViewController.m in Sources */,
+				D2E64F7D1E965CF50077D568 /* NSString+LMZXCommon.m in Sources */,
+				D2E64FA41E965CF50077D568 /* LMZXLoadingAnimation.m in Sources */,
+				D2E64F7A1E965CF50077D568 /* LMZXBaseViewController.m in Sources */,
+				D2E650341E96602E0077D568 /* LMZXBankBillLoadingVC.m in Sources */,
+				D2E6501D1E96602E0077D568 /* LMZXJDSearchVC.m in Sources */,
+				D2E64FC51E965CF50077D568 /* LMZXURLRequestSerialization.m in Sources */,
+				D2E64FBA1E965CF50077D568 /* LMZXWebViewController.m in Sources */,
+				D2591C0B1E97201F00032EE0 /* LMZXAlphaView.m in Sources */,
+				D2591C041E97201F00032EE0 /* LMHomeCollectionViewCell.m in Sources */,
+				D2E650311E96602E0077D568 /* LMZXCreditBillWebVC.m in Sources */,
+				D2E6502F1E96602E0077D568 /* LMZXCreditBillLoadingVC.m in Sources */,
+				D2E6501E1E96602E0077D568 /* LMZXMobilCarrieLoadingAnimationVC.m in Sources */,
+				D2E650221E96602E0077D568 /* LMZXTaoBaoLoadingVC.m in Sources */,
+				D2E64FA51E965CF50077D568 /* LMZXLoadingManagerView.m in Sources */,
+				D2E64FB31E965CF50077D568 /* LMZXWebViewBaseVC.m in Sources */,
+				D2E64F901E965CF50077D568 /* LMZXTool.m in Sources */,
+				D2E64F831E965CF50077D568 /* UIView+LMZXExtension.m in Sources */,
+				D2E64FB81E965CF50077D568 /* LMZXAnalysisWebModel.m in Sources */,
+				D2E64FC61E965CF50077D568 /* LMZXBaseSearchDataTool.m in Sources */,
+				D2E650451E96616C0077D568 /* LMZXListHookModel.m in Sources */,
+				D2E64F7C1E965CF50077D568 /* LMZXToast+UIView.m in Sources */,
+				D2591C0A1E97201F00032EE0 /* LMNavigationController.m in Sources */,
+				D2E64F7E1E965CF50077D568 /* UIBarButtonItem+LMZXExtension.m in Sources */,
+				D2591C081E97201F00032EE0 /* main.m in Sources */,
+				D2E650281E96602E0077D568 /* LMZXAutoInsuranceLoadingVC.m in Sources */,
+				D2E650431E96616C0077D568 /* LMZXLevelSlideBar.m in Sources */,
+				D2E6501B1E96602E0077D568 /* LMZXHouseFundSocialSecuritySearchVC.m in Sources */,
+				D2591C0D1E97201F00032EE0 /* LMZXSettingCell.m in Sources */,
+				D2E64FC71E965CF50077D568 /* LMZXQueryInfoModel.m in Sources */,
+				D2E64F9D1E965CF50077D568 /* LMZXPopTextFiledView.m in Sources */,
+				D2E650351E96602E0077D568 /* LMZXEBankBillVC.m in Sources */,
+				D2591C001E97201F00032EE0 /* LMZXColorViewController.m in Sources */,
+				D2E650461E96616C0077D568 /* LMZXListHookVC.m in Sources */,
+				D2E64FC41E965CF50077D568 /* LMZXHTTPTool.m in Sources */,
+				D2E64F9E1E965CF50077D568 /* LMZXCityListCell.m in Sources */,
+				D2E64F8F1E965CF50077D568 /* LMZXSMSTextFiled.m in Sources */,
+				D2E64F801E965CF50077D568 /* UIImage+LMZXTint.m in Sources */,
+				D2E64FA31E965CF50077D568 /* LMZXSearchBaseVC.m in Sources */,
+				D2591C011E97201F00032EE0 /* LMHomeTypeModel.m in Sources */,
+				D2E6501C1E96602E0077D568 /* LMZXJdLoadingVC.m in Sources */,
+				D2E64F7F1E965CF50077D568 /* UIButton+LMZXExtension.m in Sources */,
+				D2E650211E96602E0077D568 /* LMZXCommonSearchCell.m in Sources */,
+				D2E64F8E1E965CF50077D568 /* LMZXLog.m in Sources */,
+				D2591C021E97201F00032EE0 /* LMCollectionReusableView.m in Sources */,
+				D2E64F7B1E965CF50077D568 /* LMZXSDKNavigationController.m in Sources */,
+				D2E64FB91E965CF50077D568 /* LMZXReachability.m in Sources */,
+				D2591BF91E97201F00032EE0 /* AppDelegate.m in Sources */,
+				D2E6501A1E96602E0077D568 /* LMZXHouseFundLoadingVC.m in Sources */,
+				D2E6501F1E96602E0077D568 /* LMZXMobileCarrieSearchVC.m in Sources */,
+				D2E64F811E965CF50077D568 /* UIImageView+LMZXExtend.m in Sources */,
+				D2E64F821E965CF50077D568 /* UILabel+LMZXExtension.m in Sources */,
+				D2E64F9F1E965CF50077D568 /* LMZXCityListViewController.m in Sources */,
+				D2E650191E96602E0077D568 /* LMZXEducationSearchVC.m in Sources */,
+				D2E650231E96602E0077D568 /* LMZXTaobaoSearchVC.m in Sources */,
+				D2E6502D1E96602E0077D568 /* LMZXCentralBankVC.m in Sources */,
+				D2591BFF1E97201F00032EE0 /* LMResultShowVC.m in Sources */,
+				D2E64F921E965CF50077D568 /* LMZXSDK.m in Sources */,
+				D2E650321E96602E0077D568 /* LMZXImageBtn.m in Sources */,
+				D2E650181E96602E0077D568 /* LMZXEducationLoadingVC.m in Sources */,
+				D2E650201E96602E0077D568 /* LMZXSearchCellModel.m in Sources */,
+				D2E64FA21E965CF50077D568 /* LMZXCitySearchResultVC.m in Sources */,
+				D2E64FBB1E965CF50077D568 /* LMZXWebBusinessVC.m in Sources */,
+				D2591C101E97201F00032EE0 /* UIColor+Extension.m in Sources */,
+				D2E64FB11E965CF50077D568 /* LMZXTBProtocol.m in Sources */,
+				D2E64FA11E965CF50077D568 /* LMZXCityModel.m in Sources */,
+				D2E64F8D1E965CF50077D568 /* LMZXFactoryView.m in Sources */,
+				D2E6502C1E96602E0077D568 /* LMZXCentralBankLoadingVC.m in Sources */,
+				D2E650441E96616C0077D568 /* LMZXListHookCell.m in Sources */,
+				D2E64FB21E965CF50077D568 /* LMZXWebNetWork.m in Sources */,
+				D2591C091E97201F00032EE0 /* LMCustomThemeVC.m in Sources */,
+				D2E64F841E965CF50077D568 /* UIViewController+LMZXBackButtonHandler.m in Sources */,
+				D2E64FA01E965CF50077D568 /* LMZXCityLocationView.m in Sources */,
+				D2E64FA61E965CF50077D568 /* LMZXLoadingReportBaseVC.m in Sources */,
+				D2E650301E96602E0077D568 /* LMZXCreditBillNativeVC.m in Sources */,
+				D2E6502E1E96602E0077D568 /* LMZXCreditBillGuideVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D2591BCC1E97201F00032EE0 /* hehhe~.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2591BCD1E97201F00032EE0 /* Base */,
+			);
+			name = "hehhe~.storyboard";
+			sourceTree = "<group>";
+		};
+		D2591BCE1E97201F00032EE0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2591BCF1E97201F00032EE0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D2591BD01E97201F00032EE0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D2591BD11E97201F00032EE0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3983E6D61E8A59410013A4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3983E6D71E8A59410013A4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3983E6D91E8A59410013A4C8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 28W82NWSCE;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LMZX_SDKDemo_OC/PrefixHeader.pch";
+				INFOPLIST_FILE = LMZX_SDKDemo_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LMZX_SDKDemo_OC/Lib",
+					"$(PROJECT_DIR)/LMZX_SDKDemo_OC/Lib/LMZXlib",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiMuZhengXin.SDK.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3983E6DA1E8A59410013A4C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 28W82NWSCE;
+				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LMZX_SDKDemo_OC/PrefixHeader.pch";
+				INFOPLIST_FILE = LMZX_SDKDemo_OC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LMZX_SDKDemo_OC/Lib",
+					"$(PROJECT_DIR)/LMZX_SDKDemo_OC/Lib/LMZXlib",
+				);
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_BUNDLE_IDENTIFIER = com.LiMuZhengXin.SDK.develop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3983E6A61E8A59410013A4C8 /* Build configuration list for PBXProject "LMZX_SDK_Develop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983E6D61E8A59410013A4C8 /* Debug */,
+				3983E6D71E8A59410013A4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3983E6D81E8A59410013A4C8 /* Build configuration list for PBXNativeTarget "LMZX_SDK_Develop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3983E6D91E8A59410013A4C8 /* Debug */,
+				3983E6DA1E8A59410013A4C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3983E6A31E8A59410013A4C8 /* Project object */;
+}

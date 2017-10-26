@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xYa-0Y-bFI" customClass="SettingTopView">
+            <rect key="frame" x="0.0" y="0.0" width="353" height="360"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Me_topImg" translatesAutoresizingMaskIntoConstraints="NO" id="ckz-6M-j9T"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="REO-wz-Fwu">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="Ifh-X4-v1B"/>
+                        <constraint firstAttribute="width" constant="100" id="bAA-5O-PXa"/>
+                    </constraints>
+                    <state key="normal" image="me_head_icon"/>
+                    <connections>
+                        <action selector="clickedIconBtn:" destination="xYa-0Y-bFI" eventType="touchUpInside" id="hCK-VF-anI"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="me_auth_no" translatesAutoresizingMaskIntoConstraints="NO" id="uIx-Gw-UEs">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="dav-Uo-MYV"/>
+                        <constraint firstAttribute="height" constant="25" id="zyQ-oN-nh8"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9eD-Qt-hOD">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="HaP-xT-Aa0"/>
+                    </constraints>
+                    <state key="normal" title="登录/注册"/>
+                    <connections>
+                        <action selector="clickedLoginBtn:" destination="xYa-0Y-bFI" eventType="touchUpInside" id="iaM-m0-oeH"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9eD-Qt-hOD" secondAttribute="trailing" id="01b-6U-uBU"/>
+                <constraint firstItem="uIx-Gw-UEs" firstAttribute="top" secondItem="REO-wz-Fwu" secondAttribute="bottom" constant="-15" id="6Cu-oE-TqT"/>
+                <constraint firstAttribute="bottom" secondItem="ckz-6M-j9T" secondAttribute="bottom" id="A63-VQ-I0Z"/>
+                <constraint firstItem="ckz-6M-j9T" firstAttribute="top" secondItem="xYa-0Y-bFI" secondAttribute="top" id="F4i-aK-bLO"/>
+                <constraint firstItem="REO-wz-Fwu" firstAttribute="centerY" secondItem="xYa-0Y-bFI" secondAttribute="centerY" id="Gb5-a9-jYF"/>
+                <constraint firstAttribute="trailing" secondItem="ckz-6M-j9T" secondAttribute="trailing" id="T6n-7K-n11"/>
+                <constraint firstItem="ckz-6M-j9T" firstAttribute="leading" secondItem="xYa-0Y-bFI" secondAttribute="leading" id="XeK-wN-p54"/>
+                <constraint firstItem="9eD-Qt-hOD" firstAttribute="top" secondItem="uIx-Gw-UEs" secondAttribute="bottom" id="XfI-Tt-Ubc"/>
+                <constraint firstItem="REO-wz-Fwu" firstAttribute="centerX" secondItem="xYa-0Y-bFI" secondAttribute="centerX" id="fW4-1x-EOf"/>
+                <constraint firstItem="9eD-Qt-hOD" firstAttribute="leading" secondItem="xYa-0Y-bFI" secondAttribute="leading" id="qw1-gj-gBj"/>
+                <constraint firstItem="uIx-Gw-UEs" firstAttribute="centerX" secondItem="xYa-0Y-bFI" secondAttribute="centerX" id="tCN-7e-R7n"/>
+                <constraint firstItem="uIx-Gw-UEs" firstAttribute="centerY" secondItem="xYa-0Y-bFI" secondAttribute="centerY" constant="50" id="xGp-tJ-yrF"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="xGp-tJ-yrF"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="authImgView" destination="uIx-Gw-UEs" id="E2F-zR-Y8e"/>
+                <outlet property="bgImgView" destination="ckz-6M-j9T" id="XBd-X2-RaX"/>
+                <outlet property="iconBtn" destination="REO-wz-Fwu" id="vGt-pn-gCq"/>
+                <outlet property="loginBtn" destination="9eD-Qt-hOD" id="Q8e-5b-Wvz"/>
+            </connections>
+            <point key="canvasLocation" x="126" y="294"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Me_topImg" width="562" height="396"/>
+        <image name="me_auth_no" width="80" height="25"/>
+        <image name="me_head_icon" width="102" height="102"/>
+    </resources>
+</document>

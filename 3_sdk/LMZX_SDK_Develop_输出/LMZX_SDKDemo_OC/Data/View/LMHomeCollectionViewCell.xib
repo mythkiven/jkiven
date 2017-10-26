@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LMHomeCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="297" height="65"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="297" height="65"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lm_home_bill" translatesAutoresizingMaskIntoConstraints="NO" id="QtL-x7-0xL">
+                        <rect key="frame" x="15" y="21" width="23" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="e3K-aM-aJH"/>
+                            <constraint firstAttribute="width" constant="23" id="xdF-r3-IkO"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="信用卡账单" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8tg-NY-XS0">
+                        <rect key="frame" x="54" y="0.0" width="243" height="65"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QDt-DZ-RSr">
+                        <rect key="frame" x="296.5" y="0.0" width="0.5" height="64.5"/>
+                        <color key="backgroundColor" red="0.86274509799999999" green="0.86274509799999999" blue="0.86274509799999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="0.5" id="A2w-hV-STd"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bIc-g1-gLD" userLabel="bottomLine">
+                        <rect key="frame" x="0.0" y="64.5" width="297" height="0.5"/>
+                        <color key="backgroundColor" red="0.86274509803921573" green="0.86274509803921573" blue="0.86274509803921573" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="NMP-9L-wAh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="QDt-DZ-RSr" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="2Od-PS-PiN"/>
+                <constraint firstAttribute="bottom" secondItem="8tg-NY-XS0" secondAttribute="bottom" id="5zm-de-exZ"/>
+                <constraint firstAttribute="trailing" secondItem="bIc-g1-gLD" secondAttribute="trailing" id="80V-8O-g2y"/>
+                <constraint firstItem="QtL-x7-0xL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="E5Z-Xn-B0Y"/>
+                <constraint firstItem="bIc-g1-gLD" firstAttribute="top" secondItem="QDt-DZ-RSr" secondAttribute="bottom" id="H2l-i0-myq"/>
+                <constraint firstItem="bIc-g1-gLD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="QEk-hH-hYK"/>
+                <constraint firstAttribute="trailing" secondItem="QDt-DZ-RSr" secondAttribute="trailing" id="isc-OZ-aqb"/>
+                <constraint firstAttribute="bottom" secondItem="bIc-g1-gLD" secondAttribute="bottom" id="mLg-VX-g3e"/>
+                <constraint firstItem="QtL-x7-0xL" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="mxh-Do-c9G"/>
+                <constraint firstAttribute="trailing" secondItem="8tg-NY-XS0" secondAttribute="trailing" id="pbY-j1-ugH"/>
+                <constraint firstItem="8tg-NY-XS0" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="trZ-s4-pF8"/>
+                <constraint firstItem="8tg-NY-XS0" firstAttribute="leading" secondItem="QtL-x7-0xL" secondAttribute="trailing" constant="16" id="xk2-yE-kW7"/>
+            </constraints>
+            <size key="customSize" width="297" height="145"/>
+            <connections>
+                <outlet property="iconView" destination="QtL-x7-0xL" id="pX1-aq-l0g"/>
+                <outlet property="titleLb" destination="8tg-NY-XS0" id="Vpx-4p-3Zz"/>
+            </connections>
+            <point key="canvasLocation" x="-36.5" y="-12.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="lm_home_bill" width="23" height="23"/>
+    </resources>
+</document>

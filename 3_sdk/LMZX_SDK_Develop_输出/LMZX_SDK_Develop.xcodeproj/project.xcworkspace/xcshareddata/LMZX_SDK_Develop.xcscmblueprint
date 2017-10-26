@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "B31F1F8A90512496BCE3A996DF1495B68CCE7BBD",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "B31F1F8A90512496BCE3A996DF1495B68CCE7BBD" : 9223372036854775807,
+    "EFFC378D676A8C7D60853A9DC05B16B17EA9AA82" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "311F839E-42ED-4D82-8543-47F7F4A906F0",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "B31F1F8A90512496BCE3A996DF1495B68CCE7BBD" : "NEW_LMZX_iOS_SDK\/",
+    "EFFC378D676A8C7D60853A9DC05B16B17EA9AA82" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LMZX_SDK_Develop",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LMZX_SDK_Develop\/LMZX_SDK_Develop.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.101.1:LMZX_SDK\/LMZX_iOS_SDK.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "B31F1F8A90512496BCE3A996DF1495B68CCE7BBD"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/mythkiven\/getFund.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EFFC378D676A8C7D60853A9DC05B16B17EA9AA82"
+    }
+  ]
+}

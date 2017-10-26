@@ -1,0 +1,213 @@
+//
+//  LoseLoginOne.m
+//  MyVegetable
+//
+//  Created by mythkiven on 15/11/20.
+//  Copyright © 2015年 yunhoo. All rights reserved.
+//
+
+#import "AccountSetting.h"
+#import "YJArrowItem.h"
+#import "ChangePassword.h"
+#import "ChangePhoneNumOneStep.h"
+#import "YJTabBarController.h"
+
+#import "YJMeCell.h"
+#import "YJCompanyDetailManager.h"
+#import "YJChildAccountManagerVC.h"
+#import "YJAboutVC.h"
+
+#import "YJCompanyDetailViewController.h"
+#import "YJAuthorizationViewController.h"
+
+@interface AccountSetting ()
+{
+    UIButton *_logoutBtn;
+}
+
+@end
+
+@implementation AccountSetting
+
+-(void)dealloc {
+    [[NSNotificationCenter defaultCenter]removeObserver:self];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    self.title = @"账号设置";
+    self.view.backgroundColor = RGB_pageBackground;
+    self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0);
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(login) name:YJNotificationUserLogin object:nil];
+    
+    [self setupUI];
+}
+
+- (void)setupUI {
+    [self creatgroup0];
+//    [self creatgroup1];
+    [self setupLogoutBtn];
+}
+
+- (void)login {
+    self.tableView.tableFooterView = nil;
+    [self.dataSource removeAllObjects];
+    
+    [self setupUI];
+    [self.tableView reloadData];
+}
+
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self.navigationController.navigationBar setBackgroundImage:[UIImage imageNamed:@"navbarBg"] forBarMetrics:UIBarMetricsDefault];
+    
+}
+ 
+#pragma mark -
+#pragma mark - tableview模块
+- (void)creatgroup0 {
+    YJUserModel *user = kUserManagerTool;
+    NSString *str;
+    if (user.mobile.length) {
+        str =  [user.mobile stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"];
+    } else {
+       str =  @"尚未设置手机号";
+    }
+    YJArrowItem *item0 = [YJArrowItem itemWithTitle:@"手机号" subTitle:str destVc:[ChangePhoneNumOneStep class]];
+    YJArrowItem *item1 = [YJArrowItem itemWithTitle:@"重置密码" subTitle:nil destVc:[ChangePassword class]];
+    YJItemGroup *group = [[YJItemGroup alloc] init];
+    group.groups = @[item0,item1];
+    
+    [self.dataSource addObject:group];
+}
+
+- (void)creatgroup1 {
+    __block typeof(self) sself = self;
+//     YJArrowItem *item0 = [YJArrowItem itemWithIcon:@"" Title:@"资质认证" destVc:nil];
+//    item0.option = ^(NSIndexPath *indexPath) {
+//        [sself gotoCompany];
+//    };
+    
+    
+    
+    
+    YJArrowItem *item2 = [YJArrowItem itemWithTitle:@"关于" subTitle:nil destVc:[YJAboutVC class]];
+    
+    YJItemGroup *group = [[YJItemGroup alloc] init];
+    
+    if ([kUserManagerTool.masterStatus intValue] == 3) {
+        YJArrowItem *item1 = [YJArrowItem itemWithTitle:@"子帐号管理" subTitle:nil destVc:[YJChildAccountManagerVC class]];
+        group.groups = @[/**item0,*/item1,item2];
+        
+    } else {
+        
+        group.groups = @[/**item0,*/item2];
+
+    }
+    
+    [self.dataSource addObject:group];
+    
+}
+#pragma mark  cell
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    YJMeCell *cell = [YJMeCell meCell:tableView];
+    cell.accessoryArrowBtn.titleLabel.textAlignment = NSTextAlignmentRight;
+    [cell.accessoryArrowBtn setTitleColor:RGB_grayNormalText forState:(UIControlStateDisabled)];
+    
+    YJItemGroup *group = self.dataSource[indexPath.section];
+    YJBaseItem *item = group.groups[indexPath.row];
+    cell.item = item;
+    
+    if (group.groups.count-1 == indexPath.row) {
+        UIView *separateLine1 = [[UIView alloc] init];
+        separateLine1.frame = CGRectMake(0, 45.0-0.5, SCREEN_WIDTH, 0.5);
+        separateLine1.backgroundColor = RGB_grayLine;
+        
+        [cell.contentView addSubview:separateLine1];
+    }
+    
+    return cell;
+}
+
+
+#pragma mark -
+#pragma mark - 退出登录模块
+- (UIButton *)setupLogoutBtn {
+    
+    UIView *bgView = [[UIView alloc] init];
+    bgView.backgroundColor = RGB_pageBackground;
+//    bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, 45+20);
+    CGFloat bgViewH = 85;
+    bgView.frame = CGRectMake(0, 0, SCREEN_WIDTH, bgViewH);
+    if (_logoutBtn == nil) {
+        UIButton *logoutBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _logoutBtn = logoutBtn;
+        [logoutBtn setTitle:@"退出登录" forState:UIControlStateNormal];
+        [logoutBtn setBackgroundColor:[UIColor whiteColor]];
+        [logoutBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [logoutBtn setTitleColor:[UIColor blackColor]  forState:UIControlStateHighlighted];
+        
+        [logoutBtn addTarget:self action:@selector(logoutBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        logoutBtn.userInteractionEnabled = YES;
+        logoutBtn.enabled = YES;
+        logoutBtn.layer.borderWidth = 0.5;
+        logoutBtn.layer.borderColor = RGB_grayLine.CGColor;
+        logoutBtn.layer.cornerRadius = 2;
+        logoutBtn.layer.masksToBounds = YES;
+        
+        logoutBtn.frame = CGRectMake(-0.5, 20, SCREEN_WIDTH+1, 45);
+    }
+
+    [bgView addSubview:_logoutBtn];
+    self.tableView.tableFooterView = bgView;
+    return _logoutBtn;
+}
+
+- (void)logoutBtnClick:(UIButton*)send {
+
+    // 删除cookie
+    NSHTTPCookieStorage *cookieStorage = [NSHTTPCookieStorage sharedHTTPCookieStorage];
+    NSArray *cookies = [[NSHTTPCookieStorage sharedHTTPCookieStorage] cookies];
+    //删除cookie
+    for (NSHTTPCookie *tempCookie in cookies) {
+        [cookieStorage deleteCookie:tempCookie];
+    }
+    [Tool removeObjectForKey: cookie_session_login_lmzx];
+    
+    
+    
+    //  退出登录
+    NSDictionary *dicParams =@{@"method" : urlJK_loginOut};
+    [YJHTTPTool post:[SERVE_URL stringByAppendingString:urlJK_loginOut] params:dicParams success:^(id responseObj) {
+        // 退出登录
+    } failure:^(NSError *error) {
+        // 退出登录
+    }];
+    
+    
+    //移除用户所有信息
+    if ([YJUserManagerTool clearUserInfo]) {
+        [self.view makeToast:@"已退出登录"];
+    }
+
+    [self performSelector:@selector(outself) withObject:nil afterDelay:0.6];
+    
+}
+
+
+-(void)outself{
+//    [self.navigationController popToRootViewControllerAnimated:YES];
+    
+    LoginVC *ll = [[LoginVC alloc]init];
+    JENavigationController *nav = [[JENavigationController alloc] initWithRootViewController:ll];
+    [self presentViewController:nav animated:YES completion:nil];
+    
+
+    
+}
+
+
+@end

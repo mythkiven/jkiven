@@ -1,0 +1,579 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		338C6DE21E76363A001DE222 /* HTJCFaceBaseSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C6DE01E76363A001DE222 /* HTJCFaceBaseSdk.framework */; };
+		338C6DE31E76363A001DE222 /* HTJCFaceLiveDetectSdk.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 338C6DE11E76363A001DE222 /* HTJCFaceLiveDetectSdk.framework */; };
+		3E6557851DC03966001BAD02 /* MyBlocksKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E6557841DC03966001BAD02 /* MyBlocksKit.framework */; };
+		3ECB67271D922191000052A4 /* HTJCFaceDetectUnitTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ECB67261D922191000052A4 /* HTJCFaceDetectUnitTest.m */; };
+		5960D5140712816AB3C54999 /* libPods-HTJCFaceDetect.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 197DAF5D80561ED9C982E888 /* libPods-HTJCFaceDetect.a */; };
+		81926D9C1D22103F00FEF585 /* ShakedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 81926D9A1D22103F00FEF585 /* ShakedViewController.m */; };
+		81926D9D1D22103F00FEF585 /* ShakedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 81926D9B1D22103F00FEF585 /* ShakedViewController.xib */; };
+		BD3336681CE1B59000115785 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3336671CE1B59000115785 /* main.m */; };
+		BD33366B1CE1B59000115785 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BD33366A1CE1B59000115785 /* AppDelegate.m */; };
+		BD3336711CE1B59000115785 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD33366F1CE1B59000115785 /* Main.storyboard */; };
+		BD3336731CE1B59000115785 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD3336721CE1B59000115785 /* Assets.xcassets */; };
+		BD3336761CE1B59000115785 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD3336741CE1B59000115785 /* LaunchScreen.storyboard */; };
+		BD33367E1CE1B60300115785 /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = BD33367D1CE1B60300115785 /* ViewController.mm */; };
+		BD3336811CE1B61100115785 /* HTJCBeginView.m in Sources */ = {isa = PBXBuildFile; fileRef = BD3336801CE1B61100115785 /* HTJCBeginView.m */; };
+		BD33368F1CE1B71F00115785 /* HTJCData.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD33368D1CE1B71F00115785 /* HTJCData.bundle */; };
+		BD3336901CE1B71F00115785 /* HTJCDataBase.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD33368E1CE1B71F00115785 /* HTJCDataBase.bundle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3ECB67291D922191000052A4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BD33365B1CE1B59000115785 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BD3336621CE1B59000115785;
+			remoteInfo = HTJCFaceDetect;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0E7D0D48E7BD1B46F75BD08A /* Pods-HTJCFaceDetect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTJCFaceDetect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HTJCFaceDetect/Pods-HTJCFaceDetect.debug.xcconfig"; sourceTree = "<group>"; };
+		197DAF5D80561ED9C982E888 /* libPods-HTJCFaceDetect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HTJCFaceDetect.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		338C6DE01E76363A001DE222 /* HTJCFaceBaseSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HTJCFaceBaseSdk.framework; sourceTree = "<group>"; };
+		338C6DE11E76363A001DE222 /* HTJCFaceLiveDetectSdk.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HTJCFaceLiveDetectSdk.framework; sourceTree = "<group>"; };
+		3E6557841DC03966001BAD02 /* MyBlocksKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = MyBlocksKit.framework; sourceTree = "<group>"; };
+		3ECB67241D922191000052A4 /* HTJCFaceDetectUnitTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HTJCFaceDetectUnitTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3ECB67261D922191000052A4 /* HTJCFaceDetectUnitTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTJCFaceDetectUnitTest.m; sourceTree = "<group>"; };
+		3ECB67281D922191000052A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		81926D991D22103F00FEF585 /* ShakedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShakedViewController.h; sourceTree = "<group>"; };
+		81926D9A1D22103F00FEF585 /* ShakedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShakedViewController.m; sourceTree = "<group>"; };
+		81926D9B1D22103F00FEF585 /* ShakedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShakedViewController.xib; sourceTree = "<group>"; };
+		AB34070E2007C86185A82D44 /* Pods-HTJCFaceDetect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTJCFaceDetect.release.xcconfig"; path = "Pods/Target Support Files/Pods-HTJCFaceDetect/Pods-HTJCFaceDetect.release.xcconfig"; sourceTree = "<group>"; };
+		BD3336631CE1B59000115785 /* HTJCFaceDetect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTJCFaceDetect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BD3336671CE1B59000115785 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BD3336691CE1B59000115785 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BD33366A1CE1B59000115785 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BD33366C1CE1B59000115785 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BD3336701CE1B59000115785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BD3336721CE1B59000115785 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BD3336751CE1B59000115785 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BD3336771CE1B59000115785 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD33367D1CE1B60300115785 /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		BD33367F1CE1B61100115785 /* HTJCBeginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTJCBeginView.h; sourceTree = "<group>"; };
+		BD3336801CE1B61100115785 /* HTJCBeginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTJCBeginView.m; sourceTree = "<group>"; };
+		BD33368D1CE1B71F00115785 /* HTJCData.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HTJCData.bundle; sourceTree = "<group>"; };
+		BD33368E1CE1B71F00115785 /* HTJCDataBase.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = HTJCDataBase.bundle; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3ECB67211D922191000052A4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3336601CE1B59000115785 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338C6DE31E76363A001DE222 /* HTJCFaceLiveDetectSdk.framework in Frameworks */,
+				338C6DE21E76363A001DE222 /* HTJCFaceBaseSdk.framework in Frameworks */,
+				3E6557851DC03966001BAD02 /* MyBlocksKit.framework in Frameworks */,
+				5960D5140712816AB3C54999 /* libPods-HTJCFaceDetect.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3ECB67251D922191000052A4 /* HTJCFaceDetectUnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				3ECB67261D922191000052A4 /* HTJCFaceDetectUnitTest.m */,
+				3ECB67281D922191000052A4 /* Info.plist */,
+			);
+			path = HTJCFaceDetectUnitTest;
+			sourceTree = "<group>";
+		};
+		7008F608719D283ADD8E458C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				197DAF5D80561ED9C982E888 /* libPods-HTJCFaceDetect.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD33365A1CE1B59000115785 = {
+			isa = PBXGroup;
+			children = (
+				338C6DE01E76363A001DE222 /* HTJCFaceBaseSdk.framework */,
+				338C6DE11E76363A001DE222 /* HTJCFaceLiveDetectSdk.framework */,
+				3E6557841DC03966001BAD02 /* MyBlocksKit.framework */,
+				BD33368D1CE1B71F00115785 /* HTJCData.bundle */,
+				BD33368E1CE1B71F00115785 /* HTJCDataBase.bundle */,
+				BD3336651CE1B59000115785 /* HTJCFaceDetect */,
+				3ECB67251D922191000052A4 /* HTJCFaceDetectUnitTest */,
+				BD3336641CE1B59000115785 /* Products */,
+				DFF963DCA93E5CC38D76D0AE /* Pods */,
+				7008F608719D283ADD8E458C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BD3336641CE1B59000115785 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BD3336631CE1B59000115785 /* HTJCFaceDetect.app */,
+				3ECB67241D922191000052A4 /* HTJCFaceDetectUnitTest.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BD3336651CE1B59000115785 /* HTJCFaceDetect */ = {
+			isa = PBXGroup;
+			children = (
+				81926D991D22103F00FEF585 /* ShakedViewController.h */,
+				81926D9A1D22103F00FEF585 /* ShakedViewController.m */,
+				81926D9B1D22103F00FEF585 /* ShakedViewController.xib */,
+				BD33367F1CE1B61100115785 /* HTJCBeginView.h */,
+				BD3336801CE1B61100115785 /* HTJCBeginView.m */,
+				BD3336691CE1B59000115785 /* AppDelegate.h */,
+				BD33366A1CE1B59000115785 /* AppDelegate.m */,
+				BD33366C1CE1B59000115785 /* ViewController.h */,
+				BD33367D1CE1B60300115785 /* ViewController.mm */,
+				BD33366F1CE1B59000115785 /* Main.storyboard */,
+				BD3336721CE1B59000115785 /* Assets.xcassets */,
+				BD3336741CE1B59000115785 /* LaunchScreen.storyboard */,
+				BD3336771CE1B59000115785 /* Info.plist */,
+				BD3336661CE1B59000115785 /* Supporting Files */,
+			);
+			path = HTJCFaceDetect;
+			sourceTree = "<group>";
+		};
+		BD3336661CE1B59000115785 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD3336671CE1B59000115785 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DFF963DCA93E5CC38D76D0AE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E7D0D48E7BD1B46F75BD08A /* Pods-HTJCFaceDetect.debug.xcconfig */,
+				AB34070E2007C86185A82D44 /* Pods-HTJCFaceDetect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3ECB67231D922191000052A4 /* HTJCFaceDetectUnitTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3ECB67311D922191000052A4 /* Build configuration list for PBXNativeTarget "HTJCFaceDetectUnitTest" */;
+			buildPhases = (
+				3ECB67201D922191000052A4 /* Sources */,
+				3ECB67211D922191000052A4 /* Frameworks */,
+				3ECB67221D922191000052A4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3ECB672A1D922191000052A4 /* PBXTargetDependency */,
+			);
+			name = HTJCFaceDetectUnitTest;
+			productName = HTJCFaceDetectUnitTest;
+			productReference = 3ECB67241D922191000052A4 /* HTJCFaceDetectUnitTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BD3336621CE1B59000115785 /* HTJCFaceDetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BD33367A1CE1B59000115785 /* Build configuration list for PBXNativeTarget "HTJCFaceDetect" */;
+			buildPhases = (
+				19F79DEB879B39661DD70B75 /* [CP] Check Pods Manifest.lock */,
+				BD33365F1CE1B59000115785 /* Sources */,
+				BD3336601CE1B59000115785 /* Frameworks */,
+				BD3336611CE1B59000115785 /* Resources */,
+				21657D7F82926208720C691F /* [CP] Embed Pods Frameworks */,
+				EE669115A7799A8C9421F227 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HTJCFaceDetect;
+			productName = HTJCFaceDetect;
+			productReference = BD3336631CE1B59000115785 /* HTJCFaceDetect.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BD33365B1CE1B59000115785 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = SJC;
+				TargetAttributes = {
+					3ECB67231D922191000052A4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = NU6D6X8FN6;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BD3336621CE1B59000115785;
+					};
+					BD3336621CE1B59000115785 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 28W82NWSCE;
+					};
+				};
+			};
+			buildConfigurationList = BD33365E1CE1B59000115785 /* Build configuration list for PBXProject "HTJCFaceDetect" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BD33365A1CE1B59000115785;
+			productRefGroup = BD3336641CE1B59000115785 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD3336621CE1B59000115785 /* HTJCFaceDetect */,
+				3ECB67231D922191000052A4 /* HTJCFaceDetectUnitTest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3ECB67221D922191000052A4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD3336611CE1B59000115785 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81926D9D1D22103F00FEF585 /* ShakedViewController.xib in Resources */,
+				BD3336901CE1B71F00115785 /* HTJCDataBase.bundle in Resources */,
+				BD3336761CE1B59000115785 /* LaunchScreen.storyboard in Resources */,
+				BD3336731CE1B59000115785 /* Assets.xcassets in Resources */,
+				BD33368F1CE1B71F00115785 /* HTJCData.bundle in Resources */,
+				BD3336711CE1B59000115785 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19F79DEB879B39661DD70B75 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		21657D7F82926208720C691F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTJCFaceDetect/Pods-HTJCFaceDetect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE669115A7799A8C9421F227 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HTJCFaceDetect/Pods-HTJCFaceDetect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3ECB67201D922191000052A4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3ECB67271D922191000052A4 /* HTJCFaceDetectUnitTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD33365F1CE1B59000115785 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81926D9C1D22103F00FEF585 /* ShakedViewController.m in Sources */,
+				BD33366B1CE1B59000115785 /* AppDelegate.m in Sources */,
+				BD3336681CE1B59000115785 /* main.m in Sources */,
+				BD33367E1CE1B60300115785 /* ViewController.mm in Sources */,
+				BD3336811CE1B61100115785 /* HTJCBeginView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3ECB672A1D922191000052A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BD3336621CE1B59000115785 /* HTJCFaceDetect */;
+			targetProxy = 3ECB67291D922191000052A4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BD33366F1CE1B59000115785 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3336701CE1B59000115785 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BD3336741CE1B59000115785 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BD3336751CE1B59000115785 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3ECB672B1D922191000052A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = NU6D6X8FN6;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = HTJCFaceDetectUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisign.HTJCFaceDetectUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTJCFaceDetect.app/HTJCFaceDetect";
+			};
+			name = Debug;
+		};
+		3ECB672C1D922191000052A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				DEVELOPMENT_TEAM = NU6D6X8FN6;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = HTJCFaceDetectUnitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hisign.HTJCFaceDetectUnitTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HTJCFaceDetect.app/HTJCFaceDetect";
+			};
+			name = Release;
+		};
+		BD3336781CE1B59000115785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BD3336791CE1B59000115785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BD33367B1CE1B59000115785 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E7D0D48E7BD1B46F75BD08A /* Pods-HTJCFaceDetect.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = NO;
+				DEVELOPMENT_TEAM = 28W82NWSCE;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "DEBUG=1";
+				INFOPLIST_FILE = HTJCFaceDetect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hjtc.sm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		BD33367C1CE1B59000115785 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB34070E2007C86185A82D44 /* Pods-HTJCFaceDetect.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				DEVELOPMENT_TEAM = 28W82NWSCE;
+				ENABLE_BITCODE = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = "";
+				INFOPLIST_FILE = HTJCFaceDetect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hjtc.sm;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3ECB67311D922191000052A4 /* Build configuration list for PBXNativeTarget "HTJCFaceDetectUnitTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3ECB672B1D922191000052A4 /* Debug */,
+				3ECB672C1D922191000052A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD33365E1CE1B59000115785 /* Build configuration list for PBXProject "HTJCFaceDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD3336781CE1B59000115785 /* Debug */,
+				BD3336791CE1B59000115785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BD33367A1CE1B59000115785 /* Build configuration list for PBXNativeTarget "HTJCFaceDetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD33367B1CE1B59000115785 /* Debug */,
+				BD33367C1CE1B59000115785 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BD33365B1CE1B59000115785 /* Project object */;
+}

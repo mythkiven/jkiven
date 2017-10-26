@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="YJShortLoadingView">
+            <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tA7-Nh-Mrh">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortLoadingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="7Qe-Ug-8pC" userLabel="Back">
+                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shortLoadingFront" translatesAutoresizingMaskIntoConstraints="NO" id="frf-JR-T0t" userLabel="loading">
+                    <rect key="frame" x="10" y="10" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="8wP-Lp-bFO"/>
+                        <constraint firstAttribute="width" constant="40" id="M0T-ID-VsF"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="7Qe-Ug-8pC" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0sL-Yg-U74"/>
+                <constraint firstItem="frf-JR-T0t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="3eq-hJ-DLF"/>
+                <constraint firstItem="tA7-Nh-Mrh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Aqk-tk-74u"/>
+                <constraint firstItem="7Qe-Ug-8pC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="G0E-u5-rji"/>
+                <constraint firstAttribute="trailing" secondItem="7Qe-Ug-8pC" secondAttribute="trailing" id="Iet-d6-L2l"/>
+                <constraint firstItem="tA7-Nh-Mrh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="fde-XW-AKb"/>
+                <constraint firstAttribute="bottom" secondItem="7Qe-Ug-8pC" secondAttribute="bottom" id="g3R-fi-liK"/>
+                <constraint firstAttribute="bottom" secondItem="tA7-Nh-Mrh" secondAttribute="bottom" id="jNn-k6-8Kt"/>
+                <constraint firstItem="frf-JR-T0t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="u7s-gD-9u3"/>
+                <constraint firstAttribute="trailing" secondItem="tA7-Nh-Mrh" secondAttribute="trailing" id="xPh-5J-74M"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cycleView" destination="frf-JR-T0t" id="w0H-uI-NF9"/>
+            </connections>
+            <point key="canvasLocation" x="217.5" y="275.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="shortLoadingBackground" width="60" height="60"/>
+        <image name="shortLoadingFront" width="40" height="40"/>
+    </resources>
+</document>
