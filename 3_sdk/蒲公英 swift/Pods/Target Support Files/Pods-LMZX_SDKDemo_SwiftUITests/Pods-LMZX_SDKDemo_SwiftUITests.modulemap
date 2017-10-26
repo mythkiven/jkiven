@@ -1,6 +1,0 @@
-framework module Pods_LMZX_SDKDemo_SwiftUITests {
-  umbrella header "Pods-LMZX_SDKDemo_SwiftUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}

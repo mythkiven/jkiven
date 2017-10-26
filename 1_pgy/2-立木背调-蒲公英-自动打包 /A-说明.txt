@@ -1,5 +1,0 @@
-
-选择最新的 xcode 9
-$ sudo xcode-select -s /Applications/Xcode.app
-一键上传
-$ bundle exec fastlane beta
